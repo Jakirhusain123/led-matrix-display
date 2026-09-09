@@ -1,0 +1,36 @@
+s1(24Aug2026:15:43:22):  irun -sv -coverage all -access +rwc vif.sv dut.sv tb_pkg.sv top.sv 
+s2(24Aug2026:15:51:38):  irun -timescale 1ns/1ps -sv -coverage all -access +rwc vif.sv dut.sv tb_pkg.sv top.sv 
+s3(24Aug2026:15:52:02):  irun -timescale 1ns/1ps -sv -coverage all -access +rwc vif.sv dut.sv tb_pkg.sv top.sv23 
+s4(24Aug2026:15:52:08):  irun -timescale 1ns/1ps -sv -coverage all -access +rwc vif.sv dut.sv tb_pkg.sv top.sv 
+s5(24Aug2026:15:52:18):  irun -timescale 1ns/1ps -sv -coverage all -access +rwc vif.sv dut.sv tb_pkg.sv top.sv 
+s6(24Aug2026:15:54:07):  irun -sv -access +rwc -coverage all -covoverwrite -covtest LED_MATRIX_TEST vif.sv dut.sv tb_pkg.sv top.sv 
+s7(24Aug2026:15:56:28):  irun -sv -access +rwc -coverage all -covoverwrite -covtest LED_MATRIX_TEST -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv 
+s8(24Aug2026:15:57:19):  irun -sv -access +rwc -coverage all -covoverwrite -covtest LED_MATRIX_TEST -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv 
+s9(24Aug2026:16:00:14):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui 
+s10(24Aug2026:16:07:18):  irun -timescale 1ns/1ps design.sv interface.sv tb_pkg.sv test.sv top.sv -access +rwc -gui 
+s11(24Aug2026:16:08:02):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s12(24Aug2026:16:16:15):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s13(24Aug2026:16:18:01):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s14(24Aug2026:16:25:24):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s15(24Aug2026:16:31:27):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s16(24Aug2026:16:32:46):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s17(25Aug2026:10:35:56):  irun -timescale 1ns/1ps vif.sv dut1.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s18(25Aug2026:10:52:29):  irun -timescale 1ns/1ps vif.sv dut1.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s19(25Aug2026:12:56:04):  irun hamming_encoder.sv tb_hamming_encoder.sv -access +rwc -gui -coverage allirun -timescale 1ns/1ps vif.sv dut1.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s20(25Aug2026:12:56:16):  irun -timescale 1ns/1ps vif.sv dut1.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s21(25Aug2026:12:56:29):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s22(25Aug2026:13:01:20):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv top.sv -access +rwc -gui -coverage all 
+s23(25Aug2026:13:02:18):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s24(25Aug2026:13:02:38):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s25(25Aug2026:13:15:18):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s26(25Aug2026:13:16:34):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s27(25Aug2026:13:24:17):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s28(25Aug2026:13:29:09):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s29(25Aug2026:13:35:56):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s30(25Aug2026:13:38:02):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s31(25Aug2026:13:43:03):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s32(25Aug2026:13:45:07):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s33(25Aug2026:13:48:25):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s34(27Aug2026:14:27:06):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s35(27Aug2026:14:34:00):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 
+s36(07Sep2026:13:49:58):  irun -timescale 1ns/1ps vif.sv dut.sv tb_pkg.sv tl.sv top.sv -access +rwc -gui -coverage all 

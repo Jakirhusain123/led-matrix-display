@@ -1,0 +1,4 @@
+s1(07Aug2026:11:02:03):  xrun -f files.f 
+s2(07Aug2026:11:18:23):  xrun design.sv interface.sv tb_pkg.sv test.sv top.sv 
+s3(07Aug2026:11:19:28):  xrun design.sv interface.sv tb_pkg.sv test.sv top.sv 
+s4(07Aug2026:11:19:35):  xrun design.sv interface.sv tb_pkg.sv test.sv top.sv 

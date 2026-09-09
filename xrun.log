@@ -1,0 +1,45 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Aug 07, 2026 at 11:19:35 IST
+xrun
+	design.sv
+	interface.sv
+	tb_pkg.sv
+	test.sv
+	top.sv
+file: tb_pkg.sv
+package tb_pkg;
+             |
+xmvlog: *W,TSNSPK (tb_pkg.sv,2|13): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+         gen.run();
+               |
+xmvlog: *E,NOTCLM (agent.sv,31|15): run is not a class item.
+         drv.run();
+               |
+xmvlog: *E,NOTCLM (agent.sv,33|15): run is not a class item.
+         mon.run();
+               |
+xmvlog: *E,NOTCLM (agent.sv,35|15): run is not a class item.
+	package worklib.tb_pkg:sv
+		errors: 3, warnings: 1
+file: test.sv
+  environment env;
+                |
+xmvlog: *E,ILLPDL (test.sv,3|16): Mixing of ansi & non-ansi style port declaration is not legal.
+	module worklib.test:sv
+		errors: 1, warnings: 0
+file: top.sv
+import tb_pkg::*;
+            |
+xmvlog: *E,NOPBIND (top.sv,1|12): Package tb_pkg could not be bound.
+    uvm_config_db#(virtual led_if)::set(null, "", "vif", tif); // If using UVM/Config DB
+                         |
+xmvlog: *W,PKGPARAM (top.sv,24|25): Overriding package parameter is illegal according to the SystemVerilog LRM. This will lead to unexpected simulation results.
+    uvm_config_db#(virtual led_if)::set(null, "", "vif", tif); // If using UVM/Config DB
+                |
+xmvlog: *E,NOPBIND (top.sv,24|16): Package uvm_config_db could not be bound.
+	module worklib.top:sv
+		errors: 1, warnings: 1
+	Total errors/warnings found outside modules and primitives:
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.09-s003: Exiting on Aug 07, 2026 at 11:19:35 IST  (total: 00:00:00)
