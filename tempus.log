@@ -1,0 +1,1586 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.18-s100_1, built Mon Jul 24 10:44:52 PDT 2023
+Options:	
+Date:		Wed Sep  2 15:59:20 2026
+Host:		cad07 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB)
+OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+
+License:
+		[15:59:20.395697] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+		tpsxl	Tempus Timing Signoff Solution XL	21.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_42289_hAAnbY'.
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+<CMD> read_design -physical_data dut.enc.dat /dut
+# Tempus Timing Signoff Solution 21.18-s100_1
+# read_design
+#  -physical_data 1
+#  dir dut.enc.dat /dut
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'dut' saved by 'Innovus' '21.15-s110_1' on 'Wed Sep 2 15:58:36 2026'.
+#% Begin Load MMMC data ... (date=09/02 16:02:08, mem=943.4M)
+**WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=09/02 16:02:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=943.5M, current mem=943.5M)
+rc
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/lef/gsclib045_tech.lef ...
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/lef/giolib045.lef ...
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/lef/pdkIO.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'IN' in macro 'PADO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'IN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (EMS-62):	Message <IMPLF-200> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading fast timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib)
+Read 480 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=33.9M, fe_cpu=0.61min, fe_real=2.82min, fe_mem=1028.1M) ***
+#% Begin Load netlist data ... (date=09/02 16:02:09, mem=1005.7M)
+*** Begin netlist parsing (mem=1028.1M) ***
+Reading verilogBinary netlist '/home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/dut.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1180.148M, initial mem = 481.699M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1180.1M) ***
+#% End Load netlist data ... (date=09/02 16:02:10, total cpu=0:00:00.4, real=0:00:01.0, peak res=1108.1M, current mem=1096.4M)
+Top level cell is dut.
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Building hierarchical netlist for Cell dut ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 1080 modules.
+** info: there are 415 stdCell insts.
+** info: there are 86 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 1533.594M, initial mem = 481.699M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "/home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/iofile/led.io" ...
+**WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+**WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+**WARN: (IMPFP-3961):	The techSite 'Corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'Pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Start create_tracks
+Set Default Input Pin Transition as 0.1 ps.
+Set Shrink Factor to 0.90000
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Loading preference file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/gui.pref.tcl ...
+**WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Signoff Solution.
+**WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Signoff Solution.
+**WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+/dev/null
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat//dut.fp.gz (mem = 1791.4M).
+#% Begin Load floorplan data ... (date=09/02 16:02:10, mem=1607.4M)
+*info: reset 576 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat//dut.fp.spr.gz (Created by Innovus v21.15-s110_1 on Wed Sep  2 15:58:35 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+32 swires and 66 svias were compressed
+32 swires and 66 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1609.0M, current mem=1609.0M)
+There are 104 io inst loaded
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+#% End Load floorplan data ... (date=09/02 16:02:11, total cpu=0:00:00.1, real=0:00:01.0, peak res=1624.2M, current mem=1624.2M)
+#% Begin Load SymbolTable ... (date=09/02 16:02:11, mem=1624.2M)
+#% End Load SymbolTable ... (date=09/02 16:02:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1624.2M, current mem=1624.2M)
+Loading place ...
+#% Begin Load placement data ... (date=09/02 16:02:11, mem=1624.2M)
+Reading placement file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat//dut.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Wed Sep  2 15:58:35 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1809.4M) ***
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Total net length = 1.383e+05 (7.266e+04 6.568e+04) (ext = 6.740e+04)
+#% End Load placement data ... (date=09/02 16:02:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1625.7M, current mem=1625.7M)
+#% Begin Load routing data ... (date=09/02 16:02:11, mem=1625.7M)
+Reading routing file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat//dut.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Wed Sep  2 15:58:36 2026 Format: 20.1) ...
+*** Total 573 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1807.4M) ***
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+#% End Load routing data ... (date=09/02 16:02:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1627.2M, current mem=1627.2M)
+Reading property file /home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat//dut.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1811.4M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/mmmc/rc/gpdk045.tch'
+ 
+ Analysis View: best
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut.enc.dat/libs/mmmc/rc/gpdk045.tch'
+Initializing multi-corner resistance tables ...
+#% Begin Load power constraints ... (date=09/02 16:02:12, mem=1635.9M)
+'set_default_switching_activity' finished successfully.
+#% End Load power constraints ... (date=09/02 16:02:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1643.2M, current mem=1643.2M)
+**WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+min max
+#% Begin load AAE data ... (date=09/02 16:02:12, mem=1657.3M)
+AAE DB initialization (MEM=1863.92 CPU=0:00:00.0 REAL=0:00:00.0) 
+#% End load AAE data ... (date=09/02 16:02:13, total cpu=0:00:00.6, real=0:00:01.0, peak res=1665.3M, current mem=1665.3M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 5 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/sdc was created. It contains 5 sinks and 1 sources.
+**WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+Restoring CCOpt config done.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+Ending "read_design" (total cpu=0:00:04.4, real=0:00:06.0, peak res=1687.8M, current mem=1673.1M)
+Loading  (dut)
+Traverse HInst (dut)
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> read_spef dut.spef
+Used active corner rc for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+
+SPEF files for RC Corner rc:
+Top-level spef file 'dut.spef'.
+Start spef parsing (MEM=1865.92).
+SPEF file dut.spef.
+Number of Resistors     : 6836
+Number of Ground Caps   : 6674
+Number of Coupling Caps : 1744
+
+End spef parsing (MEM=1877.92 CPU=0:00:00.3 REAL=0:00:00.0).
+70 nets are missing in SPEF file. The names of these nets are saved in ./rc.missing_nets.rpt.
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+<CMD> read_sdf dut.sdf
+**WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps for all the views. 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2017.08)
+/dev/null
+/dev/null
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -bumpy_waveform -threshold 0' after timing analysis. Delay report is enabled by setting 'set_si_mode -enable_delay_report true' before timing analysis.
+AAE_INFO-618: Total number of nets in the design is 576,  96.4 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 576,  96.4 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2154.42 CPU=0:00:00.3 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2154.42 CPU=0:00:00.4 REAL=0:00:01.0)
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2146.4M)
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2146.4M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=2146.77)
+AAE_INFO-618: Total number of nets in the design is 576,  0.2 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 576,  0.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2194.98 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2194.98 CPU=0:00:00.0 REAL=0:00:00.0)
+Has not load the powerDB, will keep enabled
+Has not load the powerDB, will keep enabled
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net rst
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+**ERROR: (IMPOPT-6217):	Net 'rst' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2_M1_HV' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_19. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC0_n_19 (BUFX2) to drive load pwm_count_reg[2]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Estimated cell power/ground rail width = 0.160 um
+*** Starting refinePlace (0:01:09 mem=2549.9M) ***
+Total net bbox length = 1.383e+05 (7.266e+04 6.568e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 0.40 um, max move: 0.40 um 
+	Max move on inst (g2404__9315): (270.60, 1770.80) --> (270.20, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2533.9MB
+Summary Report:
+Instances move: 1 (out of 416 movable)
+Instances flipped: 0
+Mean displacement: 0.40 um
+Max displacement: 0.40 um (Instance: g2404__9315) (270.6, 1770.8) -> (270.2, 1770.8)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NOR2X1
+Total net bbox length = 1.383e+05 (7.266e+04 6.568e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2533.9MB
+*** Finished refinePlace (0:01:09 mem=2533.9M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_0
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_0. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC1_n_0 (BUFX2) to drive load scan_count_reg[0]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:14 mem=2535.2M) ***
+Total net bbox length = 1.383e+05 (7.266e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.20 um, max move: 1.20 um 
+	Max move on inst (g2433__7098): (279.20, 1774.22) --> (280.40, 1774.22)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2519.2MB
+Summary Report:
+Instances move: 1 (out of 417 movable)
+Instances flipped: 0
+Mean displacement: 1.20 um
+Max displacement: 1.20 um (Instance: g2433__7098) (279.2, 1774.22) -> (280.4, 1774.22)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NOR2X1
+Total net bbox length = 1.383e+05 (7.266e+04 6.568e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2519.2MB
+*** Finished refinePlace (0:01:14 mem=2519.2M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_0
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC2_n_0 (BUFX2) to drive load FE_ECOC1_n_0/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:15 mem=2528.4M) ***
+Total net bbox length = 1.384e+05 (7.266e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.60 um, max move: 1.60 um 
+	Max move on inst (FE_ECOC2_n_0): (279.40, 1774.22) --> (281.00, 1774.22)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2512.4MB
+Summary Report:
+Instances move: 1 (out of 418 movable)
+Instances flipped: 0
+Mean displacement: 1.60 um
+Max displacement: 1.60 um (Instance: FE_ECOC2_n_0) (279.4, 1774.22) -> (281, 1774.22)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.267e+04 6.568e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2512.4MB
+*** Finished refinePlace (0:01:15 mem=2512.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_0
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC3_n_0 (BUFX2) to drive load FE_ECOC2_n_0/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:15 mem=2530.6M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC3_n_0): (279.40, 1774.22) --> (279.40, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2514.6MB
+Summary Report:
+Instances move: 1 (out of 419 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC3_n_0) (279.4, 1774.22) -> (279.4, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2514.6MB
+*** Finished refinePlace (0:01:15 mem=2514.6M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_9. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC4_n_9 (BUFX2) to drive load scan_count_reg[1]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:20 mem=2540.9M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um 
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2524.9MB
+Summary Report:
+Instances move: 0 (out of 420 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2524.9MB
+*** Finished refinePlace (0:01:20 mem=2524.9M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC5_n_9 (BUFX2) to drive load FE_ECOC4_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:20 mem=2533.1M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.00 um, max move: 1.00 um 
+	Max move on inst (FE_ECOC5_n_9): (263.00, 1770.80) --> (262.00, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2517.1MB
+Summary Report:
+Instances move: 1 (out of 421 movable)
+Instances flipped: 0
+Mean displacement: 1.00 um
+Max displacement: 1.00 um (Instance: FE_ECOC5_n_9) (263, 1770.8) -> (262, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2517.1MB
+*** Finished refinePlace (0:01:20 mem=2517.1M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC6_n_9 (BUFX2) to drive load FE_ECOC5_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:21 mem=2534.4M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.00 um, max move: 1.00 um 
+	Max move on inst (FE_ECOC6_n_9): (263.00, 1770.80) --> (264.00, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2518.4MB
+Summary Report:
+Instances move: 1 (out of 422 movable)
+Instances flipped: 0
+Mean displacement: 1.00 um
+Max displacement: 1.00 um (Instance: FE_ECOC6_n_9) (263, 1770.8) -> (264, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2518.4MB
+*** Finished refinePlace (0:01:21 mem=2518.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC7_n_9 (BUFX2) to drive load FE_ECOC6_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:21 mem=2535.6M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC7_n_9): (263.00, 1770.80) --> (263.00, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2519.6MB
+Summary Report:
+Instances move: 1 (out of 423 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC7_n_9) (263, 1770.8) -> (263, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2519.6MB
+*** Finished refinePlace (0:01:21 mem=2519.6M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC8_n_9 (BUFX2) to drive load FE_ECOC7_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:21 mem=2536.8M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.91 um, max move: 1.91 um 
+	Max move on inst (FE_ECOC8_n_9): (263.00, 1770.80) --> (263.20, 1769.09)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2520.8MB
+Summary Report:
+Instances move: 1 (out of 424 movable)
+Instances flipped: 0
+Mean displacement: 1.91 um
+Max displacement: 1.91 um (Instance: FE_ECOC8_n_9) (263, 1770.8) -> (263.2, 1769.09)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.267e+04 6.569e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2520.8MB
+*** Finished refinePlace (0:01:21 mem=2520.8M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC9_n_9 (BUFX2) to drive load FE_ECOC8_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:21 mem=2538.1M) ***
+Total net bbox length = 1.384e+05 (7.267e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.00 um, max move: 2.00 um 
+	Max move on inst (FE_ECOC9_n_9): (263.00, 1770.80) --> (261.00, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2522.1MB
+Summary Report:
+Instances move: 1 (out of 425 movable)
+Instances flipped: 0
+Mean displacement: 2.00 um
+Max displacement: 2.00 um (Instance: FE_ECOC9_n_9) (263, 1770.8) -> (261, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.268e+04 6.570e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2522.1MB
+*** Finished refinePlace (0:01:21 mem=2522.1M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC10_n_9 (BUFX2) to drive load FE_ECOC9_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:21 mem=2539.3M) ***
+Total net bbox length = 1.384e+05 (7.268e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.00 um, max move: 2.00 um 
+	Max move on inst (FE_ECOC4_n_9): (263.00, 1770.80) --> (265.00, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2523.3MB
+Summary Report:
+Instances move: 1 (out of 426 movable)
+Instances flipped: 0
+Mean displacement: 2.00 um
+Max displacement: 2.00 um (Instance: FE_ECOC4_n_9) (263, 1770.8) -> (265, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.268e+04 6.570e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2523.3MB
+*** Finished refinePlace (0:01:21 mem=2523.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC11_n_9 (BUFX2) to drive load FE_ECOC10_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:22 mem=2540.5M) ***
+Total net bbox length = 1.384e+05 (7.268e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.71 um, max move: 2.71 um 
+	Max move on inst (FE_ECOC11_n_9): (263.00, 1770.80) --> (262.00, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2524.5MB
+Summary Report:
+Instances move: 1 (out of 427 movable)
+Instances flipped: 0
+Mean displacement: 2.71 um
+Max displacement: 2.71 um (Instance: FE_ECOC11_n_9) (263, 1770.8) -> (262, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.268e+04 6.570e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2524.5MB
+*** Finished refinePlace (0:01:22 mem=2524.5M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC12_n_9 (BUFX2) to drive load FE_ECOC11_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:22 mem=2540.8M) ***
+Total net bbox length = 1.384e+05 (7.268e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.71 um, max move: 2.71 um 
+	Max move on inst (FE_ECOC12_n_9): (263.00, 1770.80) --> (264.00, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2524.8MB
+Summary Report:
+Instances move: 1 (out of 428 movable)
+Instances flipped: 0
+Mean displacement: 2.71 um
+Max displacement: 2.71 um (Instance: FE_ECOC12_n_9) (263, 1770.8) -> (264, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.269e+04 6.570e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2524.8MB
+*** Finished refinePlace (0:01:22 mem=2524.8M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC13_n_9 (BUFX2) to drive load FE_ECOC12_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:22 mem=2542.0M) ***
+Total net bbox length = 1.384e+05 (7.269e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.91 um, max move: 2.91 um 
+	Max move on inst (FE_ECOC13_n_9): (263.00, 1770.80) --> (264.20, 1769.09)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2526.0MB
+Summary Report:
+Instances move: 1 (out of 429 movable)
+Instances flipped: 0
+Mean displacement: 2.91 um
+Max displacement: 2.91 um (Instance: FE_ECOC13_n_9) (263, 1770.8) -> (264.2, 1769.09)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.269e+04 6.570e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2526.0MB
+*** Finished refinePlace (0:01:22 mem=2526.0M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC14_n_9 (BUFX2) to drive load FE_ECOC13_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:22 mem=2543.2M) ***
+Total net bbox length = 1.384e+05 (7.269e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.00 um, max move: 3.00 um 
+	Max move on inst (FE_ECOC14_n_9): (263.00, 1770.80) --> (266.00, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2527.2MB
+Summary Report:
+Instances move: 1 (out of 430 movable)
+Instances flipped: 0
+Mean displacement: 3.00 um
+Max displacement: 3.00 um (Instance: FE_ECOC14_n_9) (263, 1770.8) -> (266, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.269e+04 6.570e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2527.2MB
+*** Finished refinePlace (0:01:22 mem=2527.2M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC15_n_9 (BUFX2) to drive load FE_ECOC14_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:23 mem=2544.5M) ***
+Total net bbox length = 1.384e+05 (7.269e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.00 um, max move: 3.00 um 
+	Max move on inst (FE_ECOC15_n_9): (263.00, 1770.80) --> (260.00, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2528.5MB
+Summary Report:
+Instances move: 1 (out of 431 movable)
+Instances flipped: 0
+Mean displacement: 3.00 um
+Max displacement: 3.00 um (Instance: FE_ECOC15_n_9) (263, 1770.8) -> (260, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.269e+04 6.571e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2528.5MB
+*** Finished refinePlace (0:01:23 mem=2528.5M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC16_n_9 (BUFX2) to drive load FE_ECOC15_n_9/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:23 mem=2545.7M) ***
+Total net bbox length = 1.384e+05 (7.270e+04 6.570e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.42 um, max move: 3.42 um 
+	Max move on inst (FE_ECOC16_n_9): (263.00, 1770.80) --> (263.00, 1767.38)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2529.7MB
+Summary Report:
+Instances move: 1 (out of 432 movable)
+Instances flipped: 0
+Mean displacement: 3.42 um
+Max displacement: 3.42 um (Instance: FE_ECOC16_n_9) (263, 1770.8) -> (263, 1767.38)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.269e+04 6.571e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2529.7MB
+*** Finished refinePlace (0:01:23 mem=2529.7M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_25. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC17_n_25 (BUFX2) to drive load pwm_count_reg[3]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:29 mem=2555.9M) ***
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 0.60 um, max move: 0.60 um 
+	Max move on inst (FE_ECOC17_n_25): (275.40, 1774.22) --> (274.80, 1774.22)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2539.9MB
+Summary Report:
+Instances move: 1 (out of 433 movable)
+Instances flipped: 0
+Mean displacement: 0.60 um
+Max displacement: 0.60 um (Instance: FE_ECOC17_n_25) (275.4, 1774.22) -> (274.8, 1774.22)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2539.9MB
+*** Finished refinePlace (0:01:29 mem=2539.9M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC18_n_25 (BUFX2) to drive load FE_ECOC17_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:29 mem=2548.2M) ***
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.60 um, max move: 1.60 um 
+	Max move on inst (FE_ECOC18_n_25): (275.40, 1774.22) --> (273.80, 1774.22)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2532.2MB
+Summary Report:
+Instances move: 1 (out of 434 movable)
+Instances flipped: 0
+Mean displacement: 1.60 um
+Max displacement: 1.60 um (Instance: FE_ECOC18_n_25) (275.4, 1774.22) -> (273.8, 1774.22)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2532.2MB
+*** Finished refinePlace (0:01:29 mem=2532.2M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC19_n_25 (BUFX2) to drive load FE_ECOC18_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:29 mem=2548.4M) ***
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC19_n_25): (275.40, 1774.22) --> (275.40, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2532.4MB
+Summary Report:
+Instances move: 1 (out of 435 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC19_n_25) (275.4, 1774.22) -> (275.4, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2532.4MB
+*** Finished refinePlace (0:01:29 mem=2532.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC20_n_25 (BUFX2) to drive load FE_ECOC19_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:30 mem=2549.6M) ***
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.51 um, max move: 2.51 um 
+	Max move on inst (FE_ECOC20_n_25): (275.40, 1774.22) --> (276.20, 1775.93)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2533.6MB
+Summary Report:
+Instances move: 1 (out of 436 movable)
+Instances flipped: 0
+Mean displacement: 2.51 um
+Max displacement: 2.51 um (Instance: FE_ECOC20_n_25) (275.4, 1774.22) -> (276.2, 1775.93)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.270e+04 6.572e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2533.6MB
+*** Finished refinePlace (0:01:30 mem=2533.6M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC21_n_25 (BUFX2) to drive load FE_ECOC20_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:30 mem=2550.9M) ***
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.60 um, max move: 2.60 um 
+	Max move on inst (FE_ECOC21_n_25): (275.40, 1774.22) --> (272.80, 1774.22)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2534.9MB
+Summary Report:
+Instances move: 1 (out of 437 movable)
+Instances flipped: 0
+Mean displacement: 2.60 um
+Max displacement: 2.60 um (Instance: FE_ECOC21_n_25) (275.4, 1774.22) -> (272.8, 1774.22)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.270e+04 6.571e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2534.9MB
+*** Finished refinePlace (0:01:30 mem=2534.9M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC22_n_25 (BUFX2) to drive load FE_ECOC21_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:30 mem=2552.1M) ***
+Total net bbox length = 1.384e+05 (7.271e+04 6.571e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.71 um, max move: 2.71 um 
+	Max move on inst (FE_ECOC22_n_25): (275.40, 1774.22) --> (276.40, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2536.1MB
+Summary Report:
+Instances move: 1 (out of 438 movable)
+Instances flipped: 0
+Mean displacement: 2.71 um
+Max displacement: 2.71 um (Instance: FE_ECOC22_n_25) (275.4, 1774.22) -> (276.4, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.271e+04 6.572e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2536.1MB
+*** Finished refinePlace (0:01:30 mem=2536.1M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC23_n_25 (BUFX2) to drive load FE_ECOC22_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:30 mem=2553.3M) ***
+Total net bbox length = 1.384e+05 (7.271e+04 6.572e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.42 um, max move: 3.42 um 
+	Max move on inst (FE_ECOC23_n_25): (275.40, 1774.22) --> (275.40, 1777.64)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2537.3MB
+Summary Report:
+Instances move: 1 (out of 439 movable)
+Instances flipped: 0
+Mean displacement: 3.42 um
+Max displacement: 3.42 um (Instance: FE_ECOC23_n_25) (275.4, 1774.22) -> (275.4, 1777.64)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.271e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2537.3MB
+*** Finished refinePlace (0:01:30 mem=2537.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC24_n_25 (BUFX2) to drive load FE_ECOC23_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:30 mem=2554.6M) ***
+Total net bbox length = 1.384e+05 (7.271e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.51 um, max move: 3.51 um 
+	Max move on inst (FE_ECOC24_n_25): (275.40, 1774.22) --> (277.20, 1775.93)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2538.6MB
+Summary Report:
+Instances move: 1 (out of 440 movable)
+Instances flipped: 0
+Mean displacement: 3.51 um
+Max displacement: 3.51 um (Instance: FE_ECOC24_n_25) (275.4, 1774.22) -> (277.2, 1775.93)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.271e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2538.6MB
+*** Finished refinePlace (0:01:31 mem=2538.6M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC25_n_25 (BUFX2) to drive load FE_ECOC24_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:31 mem=2555.8M) ***
+Total net bbox length = 1.384e+05 (7.271e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.60 um, max move: 3.60 um 
+	Max move on inst (FE_ECOC25_n_25): (275.40, 1774.22) --> (271.80, 1774.22)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2539.8MB
+Summary Report:
+Instances move: 1 (out of 441 movable)
+Instances flipped: 0
+Mean displacement: 3.60 um
+Max displacement: 3.60 um (Instance: FE_ECOC25_n_25) (275.4, 1774.22) -> (271.8, 1774.22)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.272e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2539.8MB
+*** Finished refinePlace (0:01:31 mem=2539.8M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC26_n_25 (BUFX2) to drive load FE_ECOC25_n_25/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:31 mem=2557.1M) ***
+Total net bbox length = 1.384e+05 (7.272e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 3.71 um, max move: 3.71 um 
+	Max move on inst (FE_ECOC26_n_25): (275.40, 1774.22) --> (277.40, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2541.1MB
+Summary Report:
+Instances move: 1 (out of 442 movable)
+Instances flipped: 0
+Mean displacement: 3.71 um
+Max displacement: 3.71 um (Instance: FE_ECOC26_n_25) (275.4, 1774.22) -> (277.4, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.384e+05 (7.272e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:01.0 MEM: 2541.1MB
+*** Finished refinePlace (0:01:31 mem=2541.1M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net FE_ECON0_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC27_n_19 (BUFX2) to drive load pwm_count_reg[2]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:40 mem=2567.3M) ***
+Total net bbox length = 1.384e+05 (7.272e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 2 insts, mean move: 0.50 um, max move: 0.60 um 
+	Max move on inst (FE_ECOC0_n_19): (270.80, 1770.80) --> (271.40, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2551.3MB
+Summary Report:
+Instances move: 2 (out of 443 movable)
+Instances flipped: 0
+Mean displacement: 0.50 um
+Max displacement: 0.60 um (Instance: FE_ECOC0_n_19) (270.8, 1770.8) -> (271.4, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.272e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2551.3MB
+*** Finished refinePlace (0:01:40 mem=2551.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net FE_ECON0_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC28_n_19 (BUFX2) to drive load FE_ECOC27_n_19/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:40 mem=2559.5M) ***
+Total net bbox length = 1.385e+05 (7.272e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.60 um, max move: 1.60 um 
+	Max move on inst (FE_ECOC28_n_19): (270.40, 1770.80) --> (268.80, 1770.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2543.5MB
+Summary Report:
+Instances move: 1 (out of 444 movable)
+Instances flipped: 0
+Mean displacement: 1.60 um
+Max displacement: 1.60 um (Instance: FE_ECOC28_n_19) (270.4, 1770.8) -> (268.8, 1770.8)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2543.5MB
+*** Finished refinePlace (0:01:40 mem=2543.5M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net FE_ECON0_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC29_n_19 (BUFX2) to drive load FE_ECOC28_n_19/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:40 mem=2560.8M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC29_n_19): (270.40, 1770.80) --> (270.40, 1769.09)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2544.8MB
+Summary Report:
+Instances move: 1 (out of 445 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC29_n_19) (270.4, 1770.8) -> (270.4, 1769.09)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.573e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2544.8MB
+*** Finished refinePlace (0:01:40 mem=2544.8M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net FE_ECON1_n_0
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC30_n_0 (BUFX2) to drive load scan_count_reg[0]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:44 mem=2571.0M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.573e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC30_n_0): (278.40, 1774.22) --> (278.40, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2555.0MB
+Summary Report:
+Instances move: 1 (out of 446 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC30_n_0) (278.4, 1774.22) -> (278.4, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2555.0MB
+*** Finished refinePlace (0:01:44 mem=2555.0M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net FE_ECON1_n_0
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC31_n_0 (BUFX2) to drive load FE_ECOC30_n_0/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:44 mem=2563.2M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC31_n_0): (278.40, 1774.22) --> (278.40, 1775.93)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2547.2MB
+Summary Report:
+Instances move: 1 (out of 447 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC31_n_0) (278.4, 1774.22) -> (278.4, 1775.93)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2547.2MB
+*** Finished refinePlace (0:01:44 mem=2547.2M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net FE_ECON1_n_0
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC32_n_0 (BUFX2) to drive load FE_ECOC31_n_0/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:44 mem=2564.5M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 2.71 um, max move: 2.71 um 
+	Max move on inst (FE_ECOC32_n_0): (278.40, 1774.22) --> (279.40, 1775.93)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2548.5MB
+Summary Report:
+Instances move: 1 (out of 448 movable)
+Instances flipped: 0
+Mean displacement: 2.71 um
+Max displacement: 2.71 um (Instance: FE_ECOC32_n_0) (278.4, 1774.22) -> (279.4, 1775.93)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2548.5MB
+*** Finished refinePlace (0:01:44 mem=2548.5M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net FE_ECON27_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC33_n_19 (BUFX2) to drive load pwm_count_reg[2]/D 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:50 mem=2574.7M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 0.60 um, max move: 0.60 um 
+	Max move on inst (FE_ECOC33_n_19): (270.40, 1779.35) --> (271.00, 1779.35)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2558.7MB
+Summary Report:
+Instances move: 1 (out of 449 movable)
+Instances flipped: 0
+Mean displacement: 0.60 um
+Max displacement: 0.60 um (Instance: FE_ECOC33_n_19) (270.4, 1779.35) -> (271, 1779.35)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2558.7MB
+*** Finished refinePlace (0:01:50 mem=2558.7M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net FE_ECON27_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC34_n_19 (BUFX2) to drive load FE_ECOC33_n_19/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:50 mem=2565.9M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.60 um, max move: 1.60 um 
+	Max move on inst (FE_ECOC34_n_19): (270.40, 1779.35) --> (272.00, 1779.35)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2549.9MB
+Summary Report:
+Instances move: 1 (out of 450 movable)
+Instances flipped: 0
+Mean displacement: 1.60 um
+Max displacement: 1.60 um (Instance: FE_ECOC34_n_19) (270.4, 1779.35) -> (272, 1779.35)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2549.9MB
+*** Finished refinePlace (0:01:50 mem=2549.9M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net FE_ECON27_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC35_n_19 (BUFX2) to drive load FE_ECOC34_n_19/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+*** Starting refinePlace (0:01:50 mem=2567.2M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC35_n_19): (270.40, 1779.35) --> (270.40, 1777.64)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2551.2MB
+Summary Report:
+Instances move: 1 (out of 451 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC35_n_19) (270.4, 1779.35) -> (270.4, 1777.64)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2551.2MB
+*** Finished refinePlace (0:01:51 mem=2551.2M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON35_n_19.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON34_n_19.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC33_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Delete FE_ECOC33_n_19 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON26_n_25.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON25_n_25.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON24_n_25.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON23_n_25.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON22_n_25.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC17_n_25
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Delete FE_ECOC17_n_25 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON35_n_19.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+worst best
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC34_n_19
+#################################################################################
+# Design Name: dut
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Delete FE_ECOC34_n_19 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> write_eco -format innovus -output hold.tcl
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 2517.426M, initial mem = 481.699M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           26  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           10  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-88             2  Cannot find cell '%s'.                   
+WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2882          1  Unable to find the resistance for via '%...
+WARNING   UI-638               1  The %s to the command '%s' %s ignored si...
+WARNING   UI-156              71  preference name '%s' is not supported in...
+ERROR     IMPSYT-7004          2  %s                                       
+WARNING   IMPSYC-3133          6  The unloadTimingCon command is not suppo...
+WARNING   IMPSYC-123           8  No wire on net %s.                       
+WARNING   IMPSYC-6134          1  Setting analysis mode to %s does not hav...
+WARNING   IMPESI-3140          1  Bumpy transitions may exist in the desig...
+ERROR     IMPSP-365           36  Design has inst(s) with SITE '%s', but t...
+ERROR     IMPOPT-6217          1  Net '%s' is a multi-driver net, and cann...
+WARNING   IMPOPT-6106          4  There is mismatch between RC data and ro...
+WARNING   IMPCCOPT-2332        1  The property %s is deprecated. It still ...
+WARNING   NRIF-90              1  Option setNanoRouteMode -routeBottomRout...
+WARNING   NRIF-91              1  Option setNanoRouteMode -routeTopRouting...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   TCLCMD-1234          1  In multi-mode, multi-corner analysis mod...
+WARNING   TCLCMD-1263          1  The -frame parameter is obsolete and wil...
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 146 warning(s), 39 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:02:23, real=0:13:43, mem=2517.4M) ---

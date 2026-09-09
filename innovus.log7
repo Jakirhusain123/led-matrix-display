@@ -1,0 +1,849 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Wed Sep  2 18:38:39 2026
+Host:		cad07 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[18:38:39.395777] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat dut
+#% Begin load design ... (date=09/02 18:39:25, mem=1002.5M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'dut' saved by 'Innovus' '21.15-s110_1' on 'Wed Sep 2 16:15:59 2026'.
+% Begin Load MMMC data ... (date=09/02 18:39:26, mem=1004.9M)
+% End Load MMMC data ... (date=09/02 18:39:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=1005.6M, current mem=1005.6M)
+rc
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/gsclib045_tech.lef ...
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/giolib045.lef ...
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/pdkIO.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'IN' in macro 'PADO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'IN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading fast timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib)
+Read 480 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=33.9M, fe_cpu=0.39min, fe_real=0.80min, fe_mem=1056.3M) ***
+% Begin Load netlist data ... (date=09/02 18:39:27, mem=1030.5M)
+*** Begin netlist parsing (mem=1056.3M) ***
+Created 480 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1062.348M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1062.3M) ***
+% End Load netlist data ... (date=09/02 18:39:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1043.8M, current mem=1043.8M)
+Top level cell is dut.
+Hooked 960 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell dut ...
+*** Netlist is unique.
+** info: there are 1080 modules.
+** info: there are 448 stdCell insts.
+** info: there are 86 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 1110.762M, initial mem = 483.863M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/iofile/led.io" ...
+**WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+**WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+**WARN: (IMPFP-3961):	The techSite 'Corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'Pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Set Shrink Factor to 0.90000
+Loading preference file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADDO; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADDI; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+Reading floorplan file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.fp.gz (mem = 1362.1M).
+% Begin Load floorplan data ... (date=09/02 18:39:28, mem=1337.0M)
+*info: reset 609 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.fp.spr.gz (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1337.0M, current mem=1337.0M)
+There are 104 io inst loaded
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=09/02 18:39:28, total cpu=0:00:00.1, real=0:00:00.0, peak res=1340.6M, current mem=1340.6M)
+Reading congestion map file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=09/02 18:39:28, mem=1340.6M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=09/02 18:39:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1375.4M, current mem=1375.4M)
+Loading place ...
+% Begin Load placement data ... (date=09/02 18:39:28, mem=1375.3M)
+Reading placement file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1399.2M) ***
+Total net length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.740e+04)
+% End Load placement data ... (date=09/02 18:39:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1378.4M, current mem=1376.6M)
+% Begin Load routing data ... (date=09/02 18:39:28, mem=1376.7M)
+Reading routing file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026 Format: 20.1) ...
+*** Total 606 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1396.2M) ***
+% End Load routing data ... (date=09/02 18:39:29, total cpu=0:00:00.0, real=0:00:01.0, peak res=1377.4M, current mem=1377.4M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1399.2M) ***
+Reading dirtyarea snapshot file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.db.da.gz (Create by Innovus v21.15-s110_1 on Wed Sep  2 16:15:59 2026, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+Cap table was created using Encounter 10.10-b056_1.
+Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+Set Shrink Factor to 0.90000
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/rc/gpdk045.tch'
+ 
+ Analysis View: best
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/rc/gpdk045.tch'
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=09/02 18:39:30, mem=1393.6M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=09/02 18:39:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=1400.7M, current mem=1400.7M)
+min max
+% Begin load AAE data ... (date=09/02 18:39:30, mem=1414.7M)
+AAE DB initialization (MEM=1459.42 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=09/02 18:39:30, total cpu=0:00:00.6, real=0:00:00.0, peak res=1421.1M, current mem=1421.1M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 5 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/sdc was created. It contains 5 sinks and 1 sources.
+**WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+Restoring CCOpt config done.
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=09/02 18:39:30, total cpu=0:00:04.1, real=0:00:05.0, peak res=1445.2M, current mem=1426.9M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           26  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           10  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-88             2  Cannot find cell '%s'.                   
+WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPSYC-2             2  Timing information is not defined for ce...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCCOPT-2332        1  The property %s is deprecated. It still ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 53 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> ecoAddRepeater -cell BUFX2 -net FE_ECON0_n_19 -name FE_ECOC36_n_19
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'dut' of instances=2348 and nets=609 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design dut.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: rc
+Metal density calculation for erosion effect completed (CPU=0:00:00.0  MEM=1475.07M)
+extractDetailRC Option : -outfile /tmp/innovus_temp_111306_cad07_kite_swb9Ic/dut_111306_CULegl.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1479.1M)
+Extracted 10.05% (CPU Time= 0:00:00.2  MEM= 1612.2M)
+Extracted 20.0411% (CPU Time= 0:00:00.2  MEM= 1612.2M)
+Extracted 30.0323% (CPU Time= 0:00:00.3  MEM= 1613.2M)
+Extracted 40.0529% (CPU Time= 0:00:00.3  MEM= 1614.2M)
+Extracted 50.0441% (CPU Time= 0:00:00.3  MEM= 1615.2M)
+Extracted 60.0353% (CPU Time= 0:00:00.3  MEM= 1616.2M)
+Extracted 70.0558% (CPU Time= 0:00:00.3  MEM= 1616.2M)
+Extracted 80.047% (CPU Time= 0:00:00.4  MEM= 1616.2M)
+Extracted 90.0382% (CPU Time= 0:00:00.4  MEM= 1616.2M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 1618.2M)
+Number of Extracted Resistors     : 6867
+Number of Extracted Ground Cap.   : 6706
+Number of Extracted Coupling Cap. : 5356
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1600.2M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.8  Real Time: 0:00:01.0  MEM: 1600.246M)
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1600.25)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -bumpy_waveform -threshold 0' after timing analysis. Delay report is enabled by setting 'set_si_mode -enable_delay_report true' before timing analysis.
+Type 'man IMPESI-3140' for more detail.
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1710.85 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1710.85 CPU=0:00:00.4 REAL=0:00:01.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1710.8M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1710.8M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1696.96)
+Glitch Analysis: View worst -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst -- Total Number of Nets Analyzed = 658. 
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  9.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1741.73 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1741.73 CPU=0:00:00.1 REAL=0:00:00.0)
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | unconnected nets:       86
+ | signal nets: 
+ |    routed nets:      504 (97.5% routed)
+ |     total nets:      517
+ | clock nets: 
+ |    routed nets:        1 (100.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Add inst FE_ECOC36_n_19 (BUFX2) to drive load FE_ECOC29_n_19/A 
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Type 'man IMPSP-365' for more detail.
+Estimated cell power/ground rail width = 0.160 um
+*** Starting refinePlace (0:00:30.0 mem=1960.4M) ***
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+	Max move on inst (FE_ECOC36_n_19): (270.40, 1770.80) --> (270.40, 1772.51)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1976.4MB
+Summary Report:
+Instances move: 1 (out of 449 movable)
+Instances flipped: 0
+Mean displacement: 1.71 um
+Max displacement: 1.71 um (Instance: FE_ECOC36_n_19) (270.4, 1770.8) -> (270.4, 1772.51)
+	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1976.4MB
+*** Finished refinePlace (0:00:30.1 mem=1976.4M) ***
+<CMD> setDrawView place
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1908.5)
+Total number of fetched objects 659
+AAE_INFO-618: Total number of nets in the design is 610,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1958.26 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1958.26 CPU=0:00:00.2 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1966.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1966.3M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1921.38)
+Glitch Analysis: View best -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best -- Total Number of Nets Analyzed = 659. 
+Total number of fetched objects 659
+AAE_INFO-618: Total number of nets in the design is 610,  8.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1967.08 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1967.08 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> streamOut dut1.gds -libName DesignLib -units 2000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation total number 28
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    233                             COMP
+    234                          DIEAREA
+    223                          Metal11
+    221                          Metal11
+    220                          Metal11
+    219                          Metal11
+    218                          Metal11
+    217                            Via10
+    216                            Via10
+    212                            Via10
+    202                          Metal10
+    200                          Metal10
+    199                          Metal10
+    198                          Metal10
+    197                          Metal10
+    196                             Via9
+    195                             Via9
+    191                             Via9
+    181                           Metal9
+    179                           Metal9
+    178                           Metal9
+    177                           Metal9
+    176                           Metal9
+    175                             Via8
+    174                             Via8
+    170                             Via8
+    160                           Metal8
+    158                           Metal8
+    157                           Metal8
+    156                           Metal8
+    155                           Metal8
+    154                             Via7
+    153                             Via7
+    149                             Via7
+    139                           Metal7
+    137                           Metal7
+    136                           Metal7
+    135                           Metal7
+    134                           Metal7
+    133                             Via6
+    132                             Via6
+    131                             Via6
+    130                             Via6
+    129                             Via6
+    128                             Via6
+    127                             Via6
+    122                           Metal6
+    121                           Metal6
+    120                           Metal6
+    119                           Metal6
+    118                           Metal6
+    53                            Metal3
+    52                            Metal3
+    185                           Metal9
+    48                              Via2
+    29                            Metal2
+    180                           Metal9
+    47                              Via2
+    182                           Metal9
+    44                              Via2
+    43                              Via2
+    172                             Via8
+    38                            Metal2
+    95                            Metal5
+    36                            Metal2
+    93                            Metal5
+    112                             Via5
+    194                             Via9
+    55                            Metal3
+    113                           Metal6
+    32                            Metal2
+    54                            Metal3
+    31                            Metal2
+    107                             Via5
+    30                            Metal2
+    49                              Via2
+    106                             Via5
+    33                            Metal2
+    109                             Via5
+    10                            Metal1
+    224                          Metal11
+    86                              Via4
+    50                            Metal3
+    206                          Metal10
+    69                              Via3
+    143                           Metal7
+    6                               Cont
+    169                             Via8
+    35                            Metal2
+    8                             Metal1
+    164                           Metal8
+    27                              Via1
+    141                           Metal7
+    3                               Cont
+    51                            Metal3
+    70                              Via3
+    7                               Cont
+    64                              Via3
+    173                             Via8
+    34                            Metal2
+    92                            Metal5
+    111                             Via5
+    11                            Metal1
+    142                           Metal7
+    4                               Cont
+    9                             Metal1
+    28                              Via1
+    85                              Via4
+    138                           Metal7
+    5                               Cont
+    12                            Metal1
+    226                          Metal11
+    88                              Via4
+    183                           Metal9
+    45                              Via2
+    22                              Via1
+    152                             Via7
+    13                            Metal1
+    71                            Metal4
+    227                          Metal11
+    90                              Via4
+    184                           Metal9
+    46                              Via2
+    161                           Metal8
+    23                              Via1
+    171                             Via8
+    37                            Metal2
+    94                            Metal5
+    148                             Via7
+    14                            Metal1
+    15                            Metal1
+    72                            Metal4
+    91                              Via4
+    150                             Via7
+    16                            Metal1
+    73                            Metal4
+    159                           Metal8
+    26                              Via1
+    151                             Via7
+    17                            Metal1
+    74                            Metal4
+    1                               Cont
+    162                           Metal8
+    24                              Via1
+    140                           Metal7
+    2                               Cont
+    163                           Metal8
+    25                              Via1
+    190                             Via9
+    56                            Metal3
+    57                            Metal3
+    114                           Metal6
+    192                             Via9
+    58                            Metal3
+    115                           Metal6
+    193                             Via9
+    59                            Metal3
+    116                           Metal6
+    203                          Metal10
+    65                              Via3
+    204                          Metal10
+    66                              Via3
+    205                          Metal10
+    67                              Via3
+    201                          Metal10
+    68                              Via3
+    75                            Metal4
+    215                            Via10
+    76                            Metal4
+    211                            Via10
+    77                            Metal4
+    78                            Metal4
+    213                            Via10
+    79                            Metal4
+    214                            Via10
+    80                            Metal4
+    225                          Metal11
+    87                              Via4
+    222                          Metal11
+    89                              Via4
+    96                            Metal5
+    97                            Metal5
+    98                            Metal5
+    99                            Metal5
+    100                           Metal5
+    101                           Metal5
+    108                             Via5
+    110                             Via5
+    117                           Metal6
+    231                          Metal11
+    230                          Metal11
+    229                          Metal11
+    228                          Metal11
+    210                          Metal10
+    209                          Metal10
+    208                          Metal10
+    207                          Metal10
+    189                           Metal9
+    188                           Metal9
+    187                           Metal9
+    186                           Metal9
+    168                           Metal8
+    167                           Metal8
+    166                           Metal8
+    165                           Metal8
+    147                           Metal7
+    146                           Metal7
+    145                           Metal7
+    144                           Metal7
+    63                            Metal3
+    62                            Metal3
+    39                            Metal2
+    105                           Metal5
+    103                           Metal5
+    123                           Metal6
+    42                            Metal2
+    41                            Metal2
+    40                            Metal2
+    20                            Metal1
+    60                            Metal3
+    18                            Metal1
+    61                            Metal3
+    102                           Metal5
+    21                            Metal1
+    19                            Metal1
+    81                            Metal4
+    104                           Metal5
+    82                            Metal4
+    83                            Metal4
+    84                            Metal4
+    124                           Metal6
+    125                           Metal6
+    126                           Metal6
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                           2349
+
+Ports/Pins                             0
+
+Nets                                3923
+    metal layer Metal1               506
+    metal layer Metal2              1938
+    metal layer Metal3               558
+    metal layer Metal4               144
+    metal layer Metal5                86
+    metal layer Metal6                86
+    metal layer Metal7                86
+    metal layer Metal8               121
+    metal layer Metal9               118
+    metal layer Metal10              157
+    metal layer Metal11              123
+
+    Via Instances                   2504
+
+Special Nets                        2725
+    metal layer Metal1              2697
+    metal layer Metal10               24
+    metal layer Metal11                4
+
+    Via Instances                  16230
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 594
+    metal layer Metal1               110
+    metal layer Metal2               261
+    metal layer Metal3                83
+    metal layer Metal4                 6
+    metal layer Metal5                 3
+    metal layer Metal7                 1
+    metal layer Metal8                 7
+    metal layer Metal9                13
+    metal layer Metal10               15
+    metal layer Metal11               95
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> fit
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> gui_select -rect {1788.83450 747.22150 1929.53150 742.68300}
+<CMD> selectInst col7
+<CMD> deselectAll
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Sep  2 18:59:07 2026
+  Total CPU time:     0:03:01
+  Total real time:    0:20:30
+  Peak memory (main): 1839.29MB
+
+
+*** Memory Usage v#1 (Current mem = 1975.082M, initial mem = 483.863M) ***
+*** Message Summary: 55 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:58, real=0:20:28, mem=1975.1M) ---

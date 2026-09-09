@@ -1,0 +1,715 @@
+[09/02 18:28:56      0s] 
+[09/02 18:28:56      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[09/02 18:28:56      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/02 18:28:56      0s] 
+[09/02 18:28:56      0s] Version:	v21.18-s100_1, built Mon Jul 24 10:44:52 PDT 2023
+[09/02 18:28:56      0s] Options:	
+[09/02 18:28:56      0s] Date:		Wed Sep  2 18:28:56 2026
+[09/02 18:28:56      0s] Host:		cad07 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB)
+[09/02 18:28:56      0s] OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+[09/02 18:28:56      0s] 
+[09/02 18:28:56      0s] License:
+[09/02 18:28:56      0s] 		[18:28:56.395761] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+[09/02 18:28:56      0s] 		tpsxl	Tempus Timing Signoff Solution XL	21.1	checkout succeeded
+[09/02 18:28:56      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[09/02 18:29:09      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Signoff Solution v21.18-s100_1 (64bit) 07/24/2023 10:44 (Linux 3.10.0-693.el7.x86_64)
+[09/02 18:29:14     13s] @(#)CDS: NanoRoute 21.18-s100_1 NR230707-1955/21_18-UB (database version 18.20.605) {superthreading v2.17}
+[09/02 18:29:14     13s] @(#)CDS: AAE 21.18-s017 (64bit) 07/24/2023 (Linux 3.10.0-693.el7.x86_64)
+[09/02 18:29:14     13s] @(#)CDS: CTE 21.18-s023_1 () Jul 22 2023 21:47:22 ( )
+[09/02 18:29:14     13s] @(#)CDS: SYNTECH 21.18-s011_1 () Jul 21 2023 10:04:21 ( )
+[09/02 18:29:14     13s] @(#)CDS: CPE v21.18-s054
+[09/02 18:29:14     13s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[09/02 18:29:14     13s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[09/02 18:29:14     13s] @(#)CDS: RCDB 11.15.0
+[09/02 18:29:14     13s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[09/02 18:29:14     13s] Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+[09/02 18:29:14     13s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_100277_jvaaM5'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_100277_jvaaM5'.
+[09/02 18:29:16     15s] Has not load the powerDB, will keep enabled
+[09/02 18:29:16     15s] Has not load the powerDB, will keep enabled
+[09/02 18:29:54     19s] <CMD> read_design -physical_data dut1.enc.dat /dut
+[09/02 18:29:54     20s] # Tempus Timing Signoff Solution 21.18-s100_1
+[09/02 18:29:54     20s] # read_design
+[09/02 18:29:54     20s] #  -physical_data 1
+[09/02 18:29:54     20s] #  dir dut1.enc.dat /dut
+[09/02 18:29:54     20s] Set Default Input Pin Transition as 0.1 ps.
+[09/02 18:29:55     20s] **WARN: (IMPSYC-141):	You have set -timerMode to 1 so the setting in the config file will be ignored.
+[09/02 18:29:55     20s] Loading design 'dut' saved by 'Innovus' '21.15-s110_1' on 'Wed Sep 2 16:15:59 2026'.
+[09/02 18:29:55     20s] #% Begin Load MMMC data ... (date=09/02 18:29:55, mem=937.2M)
+[09/02 18:29:55     20s] **WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+[09/02 18:29:55     20s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[09/02 18:29:55     20s] #% End Load MMMC data ... (date=09/02 18:29:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=937.6M, current mem=937.6M)
+[09/02 18:29:55     20s] 
+[09/02 18:29:55     20s] Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/gsclib045_tech.lef ...
+[09/02 18:29:55     20s] 
+[09/02 18:29:55     20s] Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/gsclib045_macro.lef ...
+[09/02 18:29:55     20s] Set DBUPerIGU to M2 pitch 400.
+[09/02 18:29:56     21s] 
+[09/02 18:29:56     21s] Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/giolib045.lef ...
+[09/02 18:29:56     21s] 
+[09/02 18:29:56     21s] Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/pdkIO.lef ...
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'IN' in macro 'PADO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'IN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (EMS-62):	Message <IMPLF-200> has exceeded the default message display limit of 20.
+[09/02 18:29:56     21s] To avoid this warning, increase the display limit per unique message by
+[09/02 18:29:56     21s] using the set_message -limit <number> command.
+[09/02 18:29:56     21s] The message limit can be removed by using the set_message -no_limit command.
+[09/02 18:29:56     21s] Note that setting a very large number using the set_message -limit command
+[09/02 18:29:56     21s] or removing the message limit using the set_message -no_limit command can
+[09/02 18:29:56     21s] significantly increase the log file size.
+[09/02 18:29:56     21s] To suppress a message, use the set_message -suppress command.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/02 18:29:56     21s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[09/02 18:29:56     21s] Loading view definition file from /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/viewDefinition.tcl
+[09/02 18:29:56     21s] Reading slow timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib' ...
+[09/02 18:29:56     21s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib)
+[09/02 18:29:56     21s] Read 480 cells in library 'slow_vdd1v0' 
+[09/02 18:29:56     21s] Reading fast timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib' ...
+[09/02 18:29:56     21s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib)
+[09/02 18:29:56     21s] Read 480 cells in library 'fast_vdd1v0' 
+[09/02 18:29:56     21s] Ending "PreSetAnalysisView" (total cpu=0:00:00.8, real=0:00:00.0, peak res=1045.6M, current mem=1002.0M)
+[09/02 18:29:56     21s] *** End library_loading (cpu=0.01min, real=0.00min, mem=34.9M, fe_cpu=0.37min, fe_real=1.00min, fe_mem=1030.1M) ***
+[09/02 18:29:56     21s] #% Begin Load netlist data ... (date=09/02 18:29:56, mem=1001.4M)
+[09/02 18:29:57     22s] *** Begin netlist parsing (mem=1030.1M) ***
+[09/02 18:29:57     22s] Reading verilogBinary netlist '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.v.bin'
+[09/02 18:29:57     22s] 
+[09/02 18:29:57     22s] *** Memory Usage v#1 (Current mem = 1182.148M, initial mem = 481.699M) ***
+[09/02 18:29:57     22s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1182.1M) ***
+[09/02 18:29:57     22s] #% End Load netlist data ... (date=09/02 18:29:57, total cpu=0:00:00.4, real=0:00:01.0, peak res=1104.7M, current mem=1093.7M)
+[09/02 18:29:57     22s] Top level cell is dut.
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1130.6M, current mem=1130.6M)
+[09/02 18:29:57     22s] Building hierarchical netlist for Cell dut ...
+[09/02 18:29:57     22s] ***** UseNewTieNetMode *****.
+[09/02 18:29:57     22s] *** Netlist is unique.
+[09/02 18:29:57     22s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[09/02 18:29:57     22s] ** info: there are 1080 modules.
+[09/02 18:29:57     22s] ** info: there are 448 stdCell insts.
+[09/02 18:29:57     22s] ** info: there are 86 Pad insts.
+[09/02 18:29:57     22s] 
+[09/02 18:29:57     22s] *** Memory Usage v#1 (Current mem = 1536.594M, initial mem = 481.699M) ***
+[09/02 18:29:57     22s] *info: set bottom ioPad orient R0
+[09/02 18:29:57     22s] Reading IO assignment file "/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/iofile/led.io" ...
+[09/02 18:29:57     22s] **WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+[09/02 18:29:57     22s] **WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+[09/02 18:29:57     22s] **WARN: (IMPFP-3961):	The techSite 'Corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/02 18:29:57     22s] **WARN: (IMPFP-3961):	The techSite 'Pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/02 18:29:57     22s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/02 18:29:57     22s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/02 18:29:57     22s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/02 18:29:57     22s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/02 18:29:57     22s] Start create_tracks
+[09/02 18:29:57     22s] Set Default Input Pin Transition as 0.1 ps.
+[09/02 18:29:57     22s] Set Shrink Factor to 0.90000
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Loading preference file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/gui.pref.tcl ...
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Signoff Solution.
+[09/02 18:29:57     22s] **WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+[09/02 18:29:57     22s] To increase the message display limit, refer to the product command reference manual.
+[09/02 18:29:57     22s] **WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] Has not load the powerDB, will keep enabled
+[09/02 18:29:57     22s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[09/02 18:29:57     22s] #WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[09/02 18:29:57     22s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[09/02 18:29:57     22s] AAE_INFO: switching -siAware from false to true ...
+[09/02 18:29:57     22s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[09/02 18:29:57     22s] addRing command will ignore shorts while creating rings.
+[09/02 18:29:57     22s] addRing command will disallow rings to go over rows.
+[09/02 18:29:57     22s] addRing command will consider rows while creating rings.
+[09/02 18:29:57     22s] The ring targets are set to core/block ring wires.
+[09/02 18:29:57     22s] addStripe will allow jog to connect padcore ring and block ring.
+[09/02 18:29:57     22s] 
+[09/02 18:29:57     22s] Stripes will not extend to closest target.
+[09/02 18:29:57     22s] When breaking rings, the power planner will consider the existence of blocks.
+[09/02 18:29:57     22s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[09/02 18:29:57     22s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[09/02 18:29:57     22s] Stripes will not be created over regions without power planning wires.
+[09/02 18:29:57     22s] Offset for stripe breaking is set to 0.
+[09/02 18:29:57     22s] Stripes will stop at the boundary of the specified area.
+[09/02 18:29:57     22s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[09/02 18:29:57     22s] Change floorplan default-technical-site to 'CoreSite'.
+[09/02 18:29:57     22s] Extraction setup Delayed 
+[09/02 18:29:57     22s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1635.4M, current mem=1342.8M)
+[09/02 18:29:57     22s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[09/02 18:29:57     22s] 
+[09/02 18:29:57     22s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[09/02 18:29:57     22s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[09/02 18:29:57     22s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[09/02 18:29:57     22s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[09/02 18:29:57     22s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[09/02 18:29:57     22s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[09/02 18:29:57     23s] Summary for sequential cells identification: 
+[09/02 18:29:57     23s]   Identified SBFF number: 104
+[09/02 18:29:57     23s]   Identified MBFF number: 0
+[09/02 18:29:57     23s]   Identified SB Latch number: 0
+[09/02 18:29:57     23s]   Identified MB Latch number: 0
+[09/02 18:29:57     23s]   Not identified SBFF number: 16
+[09/02 18:29:57     23s]   Not identified MBFF number: 0
+[09/02 18:29:57     23s]   Not identified SB Latch number: 0
+[09/02 18:29:57     23s]   Not identified MB Latch number: 0
+[09/02 18:29:57     23s]   Number of sequential cells which are not FFs: 32
+[09/02 18:29:57     23s] Total number of combinational cells: 318
+[09/02 18:29:57     23s] Total number of sequential cells: 152
+[09/02 18:29:57     23s] Total number of tristate cells: 10
+[09/02 18:29:57     23s] Total number of level shifter cells: 0
+[09/02 18:29:57     23s] Total number of power gating cells: 0
+[09/02 18:29:57     23s] Total number of isolation cells: 0
+[09/02 18:29:57     23s] Total number of power switch cells: 0
+[09/02 18:29:57     23s] Total number of pulse generator cells: 0
+[09/02 18:29:57     23s] Total number of always on buffers: 0
+[09/02 18:29:57     23s] Total number of retention cells: 0
+[09/02 18:29:57     23s] Total number of physical cells: 0
+[09/02 18:29:57     23s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[09/02 18:29:57     23s] Total number of usable buffers: 16
+[09/02 18:29:57     23s] List of unusable buffers:
+[09/02 18:29:57     23s] Total number of unusable buffers: 0
+[09/02 18:29:57     23s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[09/02 18:29:57     23s] Total number of usable inverters: 19
+[09/02 18:29:57     23s] List of unusable inverters:
+[09/02 18:29:57     23s] Total number of unusable inverters: 0
+[09/02 18:29:57     23s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[09/02 18:29:57     23s] Total number of identified usable delay cells: 8
+[09/02 18:29:57     23s] List of identified unusable delay cells:
+[09/02 18:29:57     23s] Total number of identified unusable delay cells: 0
+[09/02 18:29:57     23s] 
+[09/02 18:29:57     23s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[09/02 18:29:57     23s] 
+[09/02 18:29:57     23s] TimeStamp Deleting Cell Server Begin ...
+[09/02 18:29:57     23s] 
+[09/02 18:29:57     23s] TimeStamp Deleting Cell Server End ...
+[09/02 18:29:57     23s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1605.6M, current mem=1605.6M)
+[09/02 18:29:57     23s] 
+[09/02 18:29:57     23s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[09/02 18:29:57     23s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[09/02 18:29:57     23s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[09/02 18:29:57     23s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[09/02 18:29:57     23s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[09/02 18:29:57     23s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[09/02 18:29:57     23s] Summary for sequential cells identification: 
+[09/02 18:29:57     23s]   Identified SBFF number: 104
+[09/02 18:29:57     23s]   Identified MBFF number: 0
+[09/02 18:29:57     23s]   Identified SB Latch number: 0
+[09/02 18:29:57     23s]   Identified MB Latch number: 0
+[09/02 18:29:57     23s]   Not identified SBFF number: 16
+[09/02 18:29:57     23s]   Not identified MBFF number: 0
+[09/02 18:29:57     23s]   Not identified SB Latch number: 0
+[09/02 18:29:57     23s]   Not identified MB Latch number: 0
+[09/02 18:29:57     23s]   Number of sequential cells which are not FFs: 32
+[09/02 18:29:57     23s] 
+[09/02 18:29:57     23s] Trim Metal Layers:
+[09/02 18:29:57     23s]  Visiting view : worst
+[09/02 18:29:57     23s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[09/02 18:29:58     23s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[09/02 18:29:58     23s]  Visiting view : best
+[09/02 18:29:58     23s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 0
+[09/02 18:29:58     23s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[09/02 18:29:58     23s] 
+[09/02 18:29:58     23s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[09/02 18:29:58     23s] 
+[09/02 18:29:58     23s] TimeStamp Deleting Cell Server Begin ...
+[09/02 18:29:58     23s] 
+[09/02 18:29:58     23s] TimeStamp Deleting Cell Server End ...
+[09/02 18:29:58     23s] Reading floorplan file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat//dut.fp.gz (mem = 1793.4M).
+[09/02 18:29:58     23s] #% Begin Load floorplan data ... (date=09/02 18:29:58, mem=1606.1M)
+[09/02 18:29:58     23s] *info: reset 609 existing net BottomPreferredLayer and AvoidDetour
+[09/02 18:29:58     23s] Deleting old partition specification.
+[09/02 18:29:58     23s]  ... processed partition successfully.
+[09/02 18:29:58     23s] Reading binary special route file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat//dut.fp.spr.gz (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026, version: 1)
+[09/02 18:29:58     23s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1607.5M, current mem=1607.5M)
+[09/02 18:29:58     23s] There are 104 io inst loaded
+[09/02 18:29:58     23s] Extracting standard cell pins and blockage ...... 
+[09/02 18:29:58     23s] Pin and blockage extraction finished
+[09/02 18:29:58     23s] #% End Load floorplan data ... (date=09/02 18:29:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=1622.7M, current mem=1622.7M)
+[09/02 18:29:58     23s] #% Begin Load SymbolTable ... (date=09/02 18:29:58, mem=1622.7M)
+[09/02 18:29:58     23s] #% End Load SymbolTable ... (date=09/02 18:29:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1623.0M, current mem=1623.0M)
+[09/02 18:29:58     23s] Loading place ...
+[09/02 18:29:58     23s] #% Begin Load placement data ... (date=09/02 18:29:58, mem=1623.0M)
+[09/02 18:29:58     23s] Reading placement file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat//dut.place.gz.
+[09/02 18:29:58     23s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026, version# 2) ...
+[09/02 18:29:58     23s] Read Views for adaptive view pruning ...
+[09/02 18:29:58     23s] Read 0 views from Binary DB for adaptive view pruning
+[09/02 18:29:58     23s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1810.4M) ***
+[09/02 18:29:58     23s] Has not load the powerDB, will keep enabled
+[09/02 18:29:58     23s] Has not load the powerDB, will keep enabled
+[09/02 18:29:58     23s] Total net length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.740e+04)
+[09/02 18:29:58     23s] #% End Load placement data ... (date=09/02 18:29:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1624.3M, current mem=1624.3M)
+[09/02 18:29:58     23s] #% Begin Load routing data ... (date=09/02 18:29:58, mem=1624.3M)
+[09/02 18:29:58     23s] Reading routing file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat//dut.route.gz.
+[09/02 18:29:59     23s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026 Format: 20.1) ...
+[09/02 18:29:59     23s] *** Total 606 nets are successfully restored.
+[09/02 18:29:59     23s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1807.4M) ***
+[09/02 18:29:59     23s] Has not load the powerDB, will keep enabled
+[09/02 18:29:59     23s] Has not load the powerDB, will keep enabled
+[09/02 18:29:59     23s] #% End Load routing data ... (date=09/02 18:29:59, total cpu=0:00:00.0, real=0:00:01.0, peak res=1625.8M, current mem=1625.8M)
+[09/02 18:29:59     23s] Reading property file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat//dut.prop
+[09/02 18:29:59     23s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1810.4M) ***
+[09/02 18:29:59     23s] Set Default Input Pin Transition as 0.1 ps.
+[09/02 18:29:59     23s] eee: readRCCornerMetaData, file read unsuccessful: /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/extraction/extractionMetaData.gz
+[09/02 18:29:59     23s] Extraction setup Started 
+[09/02 18:29:59     23s] 
+[09/02 18:29:59     23s] Trim Metal Layers:
+[09/02 18:29:59     23s] Summary of Active RC-Corners : 
+[09/02 18:29:59     23s]  
+[09/02 18:29:59     23s]  Analysis View: worst
+[09/02 18:29:59     23s]     RC-Corner Name        : rc
+[09/02 18:29:59     23s]     RC-Corner Index       : 0
+[09/02 18:29:59     23s]     RC-Corner Temperature : 125 Celsius
+[09/02 18:29:59     23s]     RC-Corner Cap Table   : ''
+[09/02 18:29:59     23s]     RC-Corner PostRoute Res Factor        : 1
+[09/02 18:29:59     23s]     RC-Corner PostRoute Cap Factor        : 1
+[09/02 18:29:59     23s]     RC-Corner PostRoute XCap Factor       : 1
+[09/02 18:29:59     23s]     RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/rc/gpdk045.tch'
+[09/02 18:29:59     23s]  
+[09/02 18:29:59     23s]  Analysis View: best
+[09/02 18:29:59     23s]     RC-Corner Name        : rc
+[09/02 18:29:59     23s]     RC-Corner Index       : 0
+[09/02 18:29:59     23s]     RC-Corner Temperature : 125 Celsius
+[09/02 18:29:59     23s]     RC-Corner Cap Table   : ''
+[09/02 18:29:59     23s]     RC-Corner PostRoute Res Factor        : 1
+[09/02 18:29:59     23s]     RC-Corner PostRoute Cap Factor        : 1
+[09/02 18:29:59     23s]     RC-Corner PostRoute XCap Factor       : 1
+[09/02 18:29:59     23s]     RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/rc/gpdk045.tch'
+[09/02 18:29:59     23s] 
+[09/02 18:29:59     23s] Trim Metal Layers:
+[09/02 18:29:59     23s] LayerId::1 widthSet size::1
+[09/02 18:29:59     23s] LayerId::2 widthSet size::1
+[09/02 18:29:59     23s] LayerId::3 widthSet size::1
+[09/02 18:29:59     23s] LayerId::4 widthSet size::1
+[09/02 18:29:59     23s] LayerId::5 widthSet size::1
+[09/02 18:29:59     23s] LayerId::6 widthSet size::1
+[09/02 18:29:59     23s] LayerId::7 widthSet size::1
+[09/02 18:29:59     23s] LayerId::8 widthSet size::1
+[09/02 18:29:59     23s] LayerId::9 widthSet size::1
+[09/02 18:29:59     23s] LayerId::10 widthSet size::1
+[09/02 18:29:59     23s] LayerId::11 widthSet size::1
+[09/02 18:29:59     23s] eee: pegSigSF::1.070000
+[09/02 18:29:59     23s] Initializing multi-corner resistance tables ...
+[09/02 18:29:59     23s] eee: l::1 avDens::0.110273 usedTrk::81563.207925 availTrk::739646.006339 sigTrk::81563.207925
+[09/02 18:29:59     23s] eee: l::2 avDens::0.022115 usedTrk::2367.117837 availTrk::107038.968889 sigTrk::2367.117837
+[09/02 18:29:59     23s] eee: l::3 avDens::0.017951 usedTrk::1845.308773 availTrk::102797.215528 sigTrk::1845.308773
+[09/02 18:29:59     23s] eee: l::4 avDens::0.018196 usedTrk::155.069006 availTrk::8522.068666 sigTrk::155.069006
+[09/02 18:29:59     23s] eee: l::5 avDens::0.001784 usedTrk::3.251462 availTrk::1822.823544 sigTrk::3.251462
+[09/02 18:29:59     23s] eee: l::6 avDens::0.000133 usedTrk::0.044444 availTrk::333.350908 sigTrk::0.044444
+[09/02 18:29:59     23s] eee: l::7 avDens::0.010178 usedTrk::249.801170 availTrk::24544.414515 sigTrk::249.801170
+[09/02 18:29:59     23s] eee: l::8 avDens::0.014923 usedTrk::967.808772 availTrk::64854.088670 sigTrk::967.808772
+[09/02 18:29:59     23s] eee: l::9 avDens::0.023374 usedTrk::1771.319297 availTrk::75781.915264 sigTrk::1771.319297
+[09/02 18:29:59     23s] eee: l::10 avDens::0.073996 usedTrk::2679.592104 availTrk::36212.524892 sigTrk::2679.592104
+[09/02 18:29:59     23s] eee: l::11 avDens::0.090458 usedTrk::579.897661 availTrk::6410.719505 sigTrk::579.897661
+[09/02 18:29:59     23s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.296973 uaWl=1.000000 uaWlH=0.453664 aWlH=0.000000 lMod=0 pMax=0.859600 pMod=81 wcR=0.772700 newSi=0.001600 wHLS=1.931750 siPrev=0 viaL=0.000000 crit=0.000000 shortMod=0.000000 fMod=0.000000 
+[09/02 18:29:59     23s] #% Begin Load power constraints ... (date=09/02 18:29:59, mem=1634.4M)
+[09/02 18:29:59     23s] #% End Load power constraints ... (date=09/02 18:29:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=1641.7M, current mem=1641.7M)
+[09/02 18:29:59     23s] **WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+[09/02 18:29:59     23s] #% Begin load AAE data ... (date=09/02 18:29:59, mem=1655.7M)
+[09/02 18:30:00     24s] AAE DB initialization (MEM=1864.91 CPU=0:00:00.0 REAL=0:00:00.0) 
+[09/02 18:30:00     24s] #% End load AAE data ... (date=09/02 18:30:00, total cpu=0:00:00.6, real=0:00:01.0, peak res=1662.1M, current mem=1662.1M)
+[09/02 18:30:00     24s] Restoring CCOpt config...
+[09/02 18:30:00     24s] 
+[09/02 18:30:00     24s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[09/02 18:30:00     24s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[09/02 18:30:00     24s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[09/02 18:30:00     24s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[09/02 18:30:00     24s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[09/02 18:30:00     24s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[09/02 18:30:00     24s] Summary for sequential cells identification: 
+[09/02 18:30:00     24s]   Identified SBFF number: 104
+[09/02 18:30:00     24s]   Identified MBFF number: 0
+[09/02 18:30:00     24s]   Identified SB Latch number: 0
+[09/02 18:30:00     24s]   Identified MB Latch number: 0
+[09/02 18:30:00     24s]   Not identified SBFF number: 16
+[09/02 18:30:00     24s]   Not identified MBFF number: 0
+[09/02 18:30:00     24s]   Not identified SB Latch number: 0
+[09/02 18:30:00     24s]   Not identified MB Latch number: 0
+[09/02 18:30:00     24s]   Number of sequential cells which are not FFs: 32
+[09/02 18:30:00     24s]  Visiting view : worst
+[09/02 18:30:00     24s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[09/02 18:30:00     24s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[09/02 18:30:00     24s]  Visiting view : best
+[09/02 18:30:00     24s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 0
+[09/02 18:30:00     24s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[09/02 18:30:00     24s] 
+[09/02 18:30:00     24s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[09/02 18:30:00     24s]   Extracting original clock gating for clk...
+[09/02 18:30:00     24s]     clock_tree clk contains 5 sinks and 0 clock gates.
+[09/02 18:30:00     24s]   Extracting original clock gating for clk done.
+[09/02 18:30:00     24s]   The skew group clk/sdc was created. It contains 5 sinks and 1 sources.
+[09/02 18:30:00     24s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[09/02 18:30:00     24s] Restoring CCOpt config done.
+[09/02 18:30:00     24s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[09/02 18:30:00     24s] timing_enable_separate_device_slew_effect_sensitivities
+[09/02 18:30:00     24s] Ending "read_design" (total cpu=0:00:04.6, real=0:00:06.0, peak res=1686.3M, current mem=1669.3M)
+[09/02 18:30:00     24s] Loading  (dut)
+[09/02 18:30:00     24s] Traverse HInst (dut)
+[09/02 18:33:23     49s] <CMD> all_setup_analysis_views
+[09/02 18:33:23     49s] <CMD> all_hold_analysis_views
+[09/02 18:33:23     49s] <CMD> all_setup_analysis_views
+[09/02 18:33:23     49s] <CMD> all_hold_analysis_views
+[09/02 18:33:23     49s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[09/02 18:33:23     49s]           To modify the active set of constraints you can use one of the following means:
+[09/02 18:33:23     49s]           - Use the set_analysis_view command to change the set of active views.
+[09/02 18:33:23     49s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[09/02 18:33:23     49s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[09/02 18:33:23     49s] <CMD> all_setup_analysis_views
+[09/02 18:33:23     49s] <CMD> all_hold_analysis_views
+[09/02 18:33:23     49s] <CMD> all_setup_analysis_views
+[09/02 18:33:23     49s] <CMD> all_hold_analysis_views
+[09/02 18:33:23     49s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[09/02 18:33:23     49s]           To modify the active set of constraints you can use one of the following means:
+[09/02 18:33:23     49s]           - Use the set_analysis_view command to change the set of active views.
+[09/02 18:33:23     49s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[09/02 18:33:23     49s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[09/02 18:33:32     50s] <CMD> read_spef dut1.spef
+[09/02 18:33:32     50s] Used active corner rc for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+[09/02 18:33:32     50s] read_spef Option :  dut1.spef -noStarN 
+[09/02 18:33:32     50s] 
+[09/02 18:33:32     50s] SPEF files for RC Corner rc:
+[09/02 18:33:32     50s] Top-level spef file 'dut1.spef'.
+[09/02 18:33:32     50s] Start spef parsing (MEM=1866.91).
+[09/02 18:33:32     50s] Number of corners: 1
+[09/02 18:33:32     50s] Number of parallel threads processing the nets is: 1
+[09/02 18:33:32     50s] Maximum backlog used in parser: 50.
+[09/02 18:33:32     50s] Reading multiple SPEF files in parallel.
+[09/02 18:33:32     50s] RCDB /tmp/ssv_tmpdir_100277_jvaaM5/dut_100277_MvDzSI.rcdb.d/dut.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 1875.9M)
+[09/02 18:33:32     50s] Creating parasitic data file '/tmp/ssv_tmpdir_100277_jvaaM5/dut_100277_MvDzSI.rcdb.d/dut.rcdb.d' for storing RC.
+[09/02 18:33:32     50s] SPEF file dut1.spef.
+[09/02 18:33:32     50s] Number of Resistors     : 6867
+[09/02 18:33:32     50s] Number of Ground Caps   : 6736
+[09/02 18:33:32     50s] Number of Coupling Caps : 1744
+[09/02 18:33:32     50s] 
+[09/02 18:33:32     50s] RCDB /tmp/ssv_tmpdir_100277_jvaaM5/dut_100277_MvDzSI.rcdb.d/dut.rcdb.d Creation Completed (CPU Time= 0:00:00.3  MEM= 1910.9M)
+[09/02 18:33:32     50s] End spef parsing (MEM=1878.91 CPU=0:00:00.3 REAL=0:00:00.0).
+[09/02 18:33:32     50s] Spef for RC Corner 'rc' was previously specified. Dropping the previous specification.
+[09/02 18:33:32     50s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=1870.906M)
+[09/02 18:33:32     50s] Opening parasitic data file '/tmp/ssv_tmpdir_100277_jvaaM5/dut_100277_MvDzSI.rcdb.d/dut.rcdb.d' for reading (mem: 1870.906M)
+[09/02 18:33:32     51s] Closing parasitic data file '/tmp/ssv_tmpdir_100277_jvaaM5/dut_100277_MvDzSI.rcdb.d/dut.rcdb.d': 0 access done (mem: 1870.906M)
+[09/02 18:33:32     51s] Lumped Parasitic Loading Completed (total cpu=0:00:00.3, real=0:00:00.0, current mem=1870.906M)
+[09/02 18:33:32     51s] 70 nets are missing in SPEF file. The names of these nets are saved in ./rc.missing_nets.rpt.
+[09/02 18:33:32     51s] Has not load the powerDB, will keep enabled
+[09/02 18:33:32     51s] Has not load the powerDB, will keep enabled
+[09/02 18:33:38     51s] <CMD> read_sdf dut1.sdf
+[09/02 18:33:38     51s] **WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+[09/02 18:33:48     53s] <CMD> get_time_unit
+[09/02 18:33:48     53s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[09/02 18:33:48     53s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[09/02 18:33:48     53s] AAE_INFO: resetNetProps for all the views. 
+[09/02 18:33:48     53s] Starting SI iteration 1 using Infinite Timing Windows
+[09/02 18:33:48     53s] #################################################################################
+[09/02 18:33:48     53s] # Design Name: dut
+[09/02 18:33:48     53s] # Design Mode: 65nm
+[09/02 18:33:48     53s] # Analysis Mode: MMMC OCV 
+[09/02 18:33:48     53s] # Parasitics Mode: SPEF/RCDB 
+[09/02 18:33:48     53s] # Signoff Settings: SI On 
+[09/02 18:33:48     53s] #################################################################################
+[09/02 18:33:48     53s] AAE_INFO: 1 threads acquired from CTE.
+[09/02 18:33:48     53s] Setting infinite Tws ...
+[09/02 18:33:48     53s] First Iteration Infinite Tw... 
+[09/02 18:33:48     53s] Topological Sorting (REAL = 0:00:00.0, MEM = 2017.1M, InitMEM = 2017.1M)
+[09/02 18:33:48     53s] Start delay calculation (fullDC) (1 T). (MEM=2017.06)
+[09/02 18:33:48     53s] Start AAE Lib Loading. (MEM=2017.06)
+[09/02 18:33:48     53s] End AAE Lib Loading. (MEM=2036.14 CPU=0:00:00.0 Real=0:00:00.0)
+[09/02 18:33:48     53s] End AAE Lib Interpolated Model. (MEM=2036.14 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[09/02 18:33:48     53s] Opening parasitic data file '/tmp/ssv_tmpdir_100277_jvaaM5/dut_100277_MvDzSI.rcdb.d/dut.rcdb.d' for reading (mem: 2074.297M)
+[09/02 18:33:48     53s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 2076.3M)
+[09/02 18:33:49     53s] **WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -bumpy_waveform -threshold 0' after timing analysis. Delay report is enabled by setting 'set_si_mode -enable_delay_report true' before timing analysis.
+[09/02 18:33:49     53s] AAE_INFO-618: Total number of nets in the design is 609,  96.6 percent of the nets selected for SI analysis
+[09/02 18:33:49     53s] AAE_INFO-618: Total number of nets in the design is 609,  96.6 percent of the nets selected for SI analysis
+[09/02 18:33:49     53s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[09/02 18:33:49     53s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[09/02 18:33:49     53s] End delay calculation. (MEM=2154.4 CPU=0:00:00.3 REAL=0:00:01.0)
+[09/02 18:33:49     53s] End delay calculation (fullDC). (MEM=2154.4 CPU=0:00:00.4 REAL=0:00:01.0)
+[09/02 18:33:49     53s] *** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 2154.4M) ***
+[09/02 18:33:49     53s] Has not load the powerDB, will keep enabled
+[09/02 18:33:49     53s] Has not load the powerDB, will keep enabled
+[09/02 18:33:49     54s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2146.4M)
+[09/02 18:33:49     54s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2146.4M)
+[09/02 18:33:49     54s] Starting SI iteration 2
+[09/02 18:33:49     54s] Start delay calculation (fullDC) (1 T). (MEM=2148.76)
+[09/02 18:33:49     54s] End AAE Lib Interpolated Model. (MEM=2148.76 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[09/02 18:33:49     54s] AAE_INFO-618: Total number of nets in the design is 609,  0.2 percent of the nets selected for SI analysis
+[09/02 18:33:49     54s] AAE_INFO-618: Total number of nets in the design is 609,  0.3 percent of the nets selected for SI analysis
+[09/02 18:33:49     54s] End delay calculation. (MEM=2195.96 CPU=0:00:00.0 REAL=0:00:00.0)
+[09/02 18:33:49     54s] End delay calculation (fullDC). (MEM=2195.96 CPU=0:00:00.0 REAL=0:00:00.0)
+[09/02 18:33:49     54s] *** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 2196.0M) ***
+[09/02 18:33:49     54s] Has not load the powerDB, will keep enabled
+[09/02 18:33:49     54s] Has not load the powerDB, will keep enabled
+[09/02 18:33:50     54s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[09/02 18:33:50     54s] Parsing file top.mtarpt...
+[09/02 18:33:58     55s] <CMD> get_time_unit
+[09/02 18:33:58     55s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[09/02 18:33:58     55s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[09/02 18:33:58     55s] Parsing file top.mtarpt...
+[09/02 18:34:15     57s] <CMD_INTERNAL> zoomSelected
+[09/02 18:34:15     57s] <CMD_INTERNAL> zoomSelected
+[09/02 18:34:26     59s] <CMD_INTERNAL> zoomSelected
+[09/02 18:34:26     59s] <CMD_INTERNAL> zoomSelected
+[09/02 18:34:27     59s] <CMD> all_analysis_views
+[09/02 18:34:27     59s] <CMD> all_setup_analysis_views
+[09/02 18:34:27     59s] <CMD> all_hold_analysis_views
+[09/02 18:34:27     59s] <CMD> get_analysis_view $view -delay_corner
+[09/02 18:34:27     59s] <CMD> get_delay_corner $dc -rc_corner
+[09/02 18:34:40     60s] <CMD> add_repeater -cell BUFX3 -net {}
+[09/02 18:34:40     60s] #################################################################################
+[09/02 18:34:40     60s] # Design Name: dut
+[09/02 18:34:40     60s] # Design Mode: 65nm
+[09/02 18:34:40     60s] # Analysis Mode: MMMC OCV 
+[09/02 18:34:40     60s] # Parasitics Mode: SPEF/RCDB 
+[09/02 18:34:40     60s] # Signoff Settings: SI On 
+[09/02 18:34:40     60s] #################################################################################
+[09/02 18:34:40     60s] **ERROR: (IMPOPT-560):	Net '' not found.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[09/02 18:34:42     61s] <CMD_INTERNAL> redraw
+[09/02 18:34:53     62s] <CMD_INTERNAL> zoomSelected
+[09/02 18:34:53     62s] <CMD_INTERNAL> zoomSelected
+[09/02 18:34:59     63s] <CMD> all_analysis_views
+[09/02 18:34:59     63s] <CMD> all_setup_analysis_views
+[09/02 18:34:59     63s] <CMD> all_hold_analysis_views
+[09/02 18:34:59     63s] <CMD> get_analysis_view $view -delay_corner
+[09/02 18:34:59     63s] <CMD> get_delay_corner $dc -rc_corner
+[09/02 18:35:09     64s] <CMD> add_repeater -cell BUFX3 -net rst
+[09/02 18:35:09     64s] #################################################################################
+[09/02 18:35:09     64s] # Design Name: dut
+[09/02 18:35:09     64s] # Design Mode: 65nm
+[09/02 18:35:09     64s] # Analysis Mode: MMMC OCV 
+[09/02 18:35:09     64s] # Parasitics Mode: SPEF/RCDB 
+[09/02 18:35:09     64s] # Signoff Settings: SI On 
+[09/02 18:35:09     64s] #################################################################################
+[09/02 18:35:09     64s] **ERROR: (IMPOPT-6217):	Net 'rst' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[09/02 18:35:11     65s] <CMD_INTERNAL> redraw
+[09/02 18:35:19     66s] <CMD_INTERNAL> zoomSelected
+[09/02 18:35:19     66s] <CMD_INTERNAL> zoomSelected
+[09/02 18:35:19     66s] <CMD_INTERNAL> zoomSelected
+[09/02 18:35:27     67s] <CMD> all_analysis_views
+[09/02 18:35:27     67s] <CMD> all_setup_analysis_views
+[09/02 18:35:27     67s] <CMD> all_hold_analysis_views
+[09/02 18:35:27     67s] <CMD> get_analysis_view $view -delay_corner
+[09/02 18:35:27     67s] <CMD> get_delay_corner $dc -rc_corner
+[09/02 18:35:37     68s] <CMD> add_repeater -cell BUFX2 -net FE_ECON0_n_19
+[09/02 18:35:37     68s] #################################################################################
+[09/02 18:35:37     68s] # Design Name: dut
+[09/02 18:35:37     68s] # Design Mode: 65nm
+[09/02 18:35:37     68s] # Analysis Mode: MMMC OCV 
+[09/02 18:35:37     68s] # Parasitics Mode: SPEF/RCDB 
+[09/02 18:35:37     68s] # Signoff Settings: SI On 
+[09/02 18:35:37     68s] #################################################################################
+[09/02 18:35:37     68s] ### Creating TopoMgr, started
+[09/02 18:35:37     68s] ### Creating TopoMgr, finished
+[09/02 18:35:37     68s] #optDebug: Start CG creation (mem=2202.0M)
+[09/02 18:35:37     68s]  ...initializing CG  maxDriveDist -0.000500 stdCellHgt 1.710000 defLenToSkip 11.970000 IgnoreMultFactor 7.000000 RTBasedMultFactor 0.100000  length 11.970000 
+[09/02 18:35:38     68s] (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgPrt (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgEgp (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgPbk (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgNrb(cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgObs (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgCon (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s]  ...processing cgPdm (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s] #optDebug: Finish CG creation (cpu=0:00:00.3, mem=2366.0M)
+[09/02 18:35:38     68s] End AAE Lib Interpolated Model. (MEM=2366.02 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[09/02 18:35:38     68s] **WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net FE_ECON0_n_19. Rebuilding the RC network for the net; coupling caps will be grounded.
+[09/02 18:35:38     68s] Add inst FE_ECOC36_n_19 (BUFX2) to drive load FE_ECOC29_n_19/A 
+[09/02 18:35:38     68s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2382.0M, EPOCH TIME: 1788354338.271678
+[09/02 18:35:38     68s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2382.0M, EPOCH TIME: 1788354338.271872
+[09/02 18:35:38     68s] # Init pin-track-align, new floorplan.
+[09/02 18:35:38     68s] Processing tracks to init pin-track alignment.
+[09/02 18:35:38     68s] z: 2, totalTracks: 1
+[09/02 18:35:38     68s] z: 4, totalTracks: 1
+[09/02 18:35:38     68s] z: 6, totalTracks: 1
+[09/02 18:35:38     68s] z: 8, totalTracks: 1
+[09/02 18:35:38     68s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[09/02 18:35:38     68s] All LLGs are deleted
+[09/02 18:35:38     68s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     68s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     68s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2382.0M, EPOCH TIME: 1788354338.399652
+[09/02 18:35:38     68s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2382.0M, EPOCH TIME: 1788354338.399918
+[09/02 18:35:38     68s] # Building dut llgBox search-tree.
+[09/02 18:35:38     68s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2382.0M, EPOCH TIME: 1788354338.400307
+[09/02 18:35:38     68s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     68s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     68s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2382.0M, EPOCH TIME: 1788354338.401435
+[09/02 18:35:38     68s] Max number of tech site patterns supported in site array is 256.
+[09/02 18:35:38     68s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[09/02 18:35:38     68s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2382.0M, EPOCH TIME: 1788354338.422393
+[09/02 18:35:38     68s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3c94f9c0): Create thread pool 0x7ffaedbd90e8.
+[09/02 18:35:38     68s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3c94f9c0): 0 out of 1 thread pools are available.
+[09/02 18:35:38     68s] After signature check, allow fast init is false, keep pre-filter is false.
+[09/02 18:35:38     68s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[09/02 18:35:38     68s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.004, REAL:0.004, MEM:2494.0M, EPOCH TIME: 1788354338.426336
+[09/02 18:35:38     68s] Use non-trimmed site array because memory saving is not enough.
+[09/02 18:35:38     68s] SiteArray: non-trimmed site array dimensions = 898 x 7680
+[09/02 18:35:38     68s] SiteArray: use 34,484,224 bytes
+[09/02 18:35:38     68s] SiteArray: current memory after site array memory allocation 2526.9M
+[09/02 18:35:38     68s] SiteArray: FP blocked sites are writable
+[09/02 18:35:38     69s] Estimated cell power/ground rail width = 0.160 um
+[09/02 18:35:38     69s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[09/02 18:35:38     69s] OPERPROF:         Starting RoutingBlockageFromWireViaStBox at level 5, MEM:2526.9M, EPOCH TIME: 1788354338.500068
+[09/02 18:35:38     69s] OPERPROF:         Finished RoutingBlockageFromWireViaStBox at level 5, CPU:0.000, REAL:0.000, MEM:2526.9M, EPOCH TIME: 1788354338.500529
+[09/02 18:35:38     69s] SiteArray: number of non floorplan blocked sites for llg default is 6896640
+[09/02 18:35:38     69s] Atter site array init, number of instance map data is 0.
+[09/02 18:35:38     69s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.155, REAL:0.154, MEM:2526.9M, EPOCH TIME: 1788354338.555900
+[09/02 18:35:38     69s] 
+[09/02 18:35:38     69s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[09/02 18:35:38     69s] 
+[09/02 18:35:38     69s]  Skipping Bad Lib Cell Checking (CMU) !
+[09/02 18:35:38     69s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.193, REAL:0.193, MEM:2526.9M, EPOCH TIME: 1788354338.593534
+[09/02 18:35:38     69s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2526.9M, EPOCH TIME: 1788354338.593613
+[09/02 18:35:38     69s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.001, REAL:0.001, MEM:2542.9M, EPOCH TIME: 1788354338.594199
+[09/02 18:35:38     69s] [CPU] DPlace-Init (cpu=0:00:00.3, real=0:00:00.0, mem=2542.9MB).
+[09/02 18:35:38     69s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.306, REAL:0.323, MEM:2542.9M, EPOCH TIME: 1788354338.594522
+[09/02 18:35:38     69s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.306, REAL:0.323, MEM:2542.9M, EPOCH TIME: 1788354338.594573
+[09/02 18:35:38     69s] TDRefine: refinePlace mode is spiral
+[09/02 18:35:38     69s] GigaOpt Checkpoint: Intermediate DB Saving Point beforeRefinePlace.100277.1
+[09/02 18:35:38     69s] OPERPROF: Starting RefinePlace at level 1, MEM:2542.9M, EPOCH TIME: 1788354338.594660
+[09/02 18:35:38     69s] *** Starting refinePlace (0:01:09 mem=2542.9M) ***
+[09/02 18:35:38     69s] Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+[09/02 18:35:38     69s] 
+[09/02 18:35:38     69s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[09/02 18:35:38     69s] Move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um 
+[09/02 18:35:38     69s] (I)      Default pattern map key = dut_default.
+[09/02 18:35:38     69s] (I)      Default pattern map key = dut_default.
+[09/02 18:35:38     69s] OPERPROF:   Starting RefinePlace2 at level 2, MEM:2542.9M, EPOCH TIME: 1788354338.610890
+[09/02 18:35:38     69s] Starting refinePlace ...
+[09/02 18:35:38     69s] (I)      Default pattern map key = dut_default.
+[09/02 18:35:38     69s] One DDP V2 for no tweak run.
+[09/02 18:35:38     69s] [CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:00.0, mem=2542.9MB) @(0:01:09 - 0:01:09).
+[09/02 18:35:38     69s] Move report: preRPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um 
+[09/02 18:35:38     69s] wireLenOptFixPriorityInst 0 inst fixed
+[09/02 18:35:38     69s] 
+[09/02 18:35:38     69s] Running Spiral with 1 thread in Normal Mode  fetchWidth=1024 
+[09/02 18:35:38     69s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3c94f9c0): Rebuild thread pool 0x7ffaedbd90e8.
+[09/02 18:35:38     69s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3c94f9c0): 0 out of 1 thread pools are available.
+[09/02 18:35:38     69s] Move report: legalization moves 1 insts, mean move: 1.71 um, max move: 1.71 um spiral
+[09/02 18:35:38     69s] 	Max move on inst (FE_ECOC36_n_19): (270.40, 1770.80) --> (270.40, 1772.51)
+[09/02 18:35:38     69s] [CPU] RefinePlace/Spiral (cpu=0:00:00.0, real=0:00:00.0)
+[09/02 18:35:38     69s] [CPU] RefinePlace/Commit (cpu=0:00:00.0, real=0:00:00.0), EEQ(cpu=0:00:00.0, real=0:00:00.0), MTComit(cpu=0:00:00.0, real=0:00:00.0), leftOver(cpu=0:00:00.0, real=0:00:00.0)
+[09/02 18:35:38     69s] [CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=2526.9MB) @(0:01:09 - 0:01:09).
+[09/02 18:35:38     69s] Move report: Detail placement moves 1 insts, mean move: 1.71 um, max move: 1.71 um 
+[09/02 18:35:38     69s] 	Max move on inst (FE_ECOC36_n_19): (270.40, 1770.80) --> (270.40, 1772.51)
+[09/02 18:35:38     69s] 	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2526.9MB
+[09/02 18:35:38     69s] Statistics of distance of Instance movement in refine placement:
+[09/02 18:35:38     69s]   maximum (X+Y) =         1.71 um
+[09/02 18:35:38     69s]   inst (FE_ECOC36_n_19) with max move: (270.4, 1770.8) -> (270.4, 1772.51)
+[09/02 18:35:38     69s]   mean    (X+Y) =         1.71 um
+[09/02 18:35:38     69s] Summary Report:
+[09/02 18:35:38     69s] Instances move: 1 (out of 449 movable)
+[09/02 18:35:38     69s] Instances flipped: 0
+[09/02 18:35:38     69s] Mean displacement: 1.71 um
+[09/02 18:35:38     69s] Max displacement: 1.71 um (Instance: FE_ECOC36_n_19) (270.4, 1770.8) -> (270.4, 1772.51)
+[09/02 18:35:38     69s] 	Length: 5 sites, height: 1 rows, site name: CoreSiteDouble, cell type: BUFX2
+[09/02 18:35:38     69s] Total instances moved : 1
+[09/02 18:35:38     69s] OPERPROF:   Finished RefinePlace2 at level 2, CPU:0.016, REAL:0.015, MEM:2526.9M, EPOCH TIME: 1788354338.625742
+[09/02 18:35:38     69s] Total net bbox length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.731e+04)
+[09/02 18:35:38     69s] Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2526.9MB
+[09/02 18:35:38     69s] [CPU] RefinePlace/total (cpu=0:00:00.0, real=0:00:00.0, mem=2526.9MB) @(0:01:09 - 0:01:09).
+[09/02 18:35:38     69s] *** Finished refinePlace (0:01:09 mem=2526.9M) ***
+[09/02 18:35:38     69s] GigaOpt Checkpoint: Intermediate DB Saving Point afterRefinePlace.100277.1
+[09/02 18:35:38     69s] OPERPROF: Finished RefinePlace at level 1, CPU:0.033, REAL:0.032, MEM:2526.9M, EPOCH TIME: 1788354338.626202
+[09/02 18:35:38     69s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2526.9M, EPOCH TIME: 1788354338.626258
+[09/02 18:35:38     69s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:2245).
+[09/02 18:35:38     69s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     69s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     69s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[09/02 18:35:38     69s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2526.9M, EPOCH TIME: 1788354338.635337
+[09/02 18:35:38     69s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2526.9M, EPOCH TIME: 1788354338.635459
+[09/02 18:35:38     69s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.010, REAL:0.010, MEM:2443.9M, EPOCH TIME: 1788354338.636468
+[09/02 18:35:38     69s] <CMD_INTERNAL> redraw
+[09/02 18:35:45     70s] <CMD> get_time_unit
+[09/02 18:35:45     70s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[09/02 18:35:45     70s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[09/02 18:35:45     70s] Parsing file top.mtarpt...
+[09/02 18:35:49     70s] <CMD> get_time_unit
+[09/02 18:35:49     70s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[09/02 18:35:49     70s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[09/02 18:35:49     70s] Parsing file top.mtarpt...
+[09/02 18:37:58     86s] <CMD> write_eco -format innovus -output hold1.tcl

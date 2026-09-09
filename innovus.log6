@@ -1,0 +1,566 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Wed Sep  2 18:30:37 2026
+Host:		cad07 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[18:30:37.395697] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat dut
+#% Begin load design ... (date=09/02 18:31:30, mem=1000.4M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'dut' saved by 'Innovus' '21.15-s110_1' on 'Wed Sep 2 16:15:59 2026'.
+% Begin Load MMMC data ... (date=09/02 18:31:31, mem=1002.7M)
+% End Load MMMC data ... (date=09/02 18:31:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=1003.4M, current mem=1003.4M)
+rc
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/gsclib045_tech.lef ...
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/giolib045.lef ...
+
+Loading LEF file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/lef/pdkIO.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'IN' in macro 'PADO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'IN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/slow_vdd1v0_basicCells.lib)
+Read 480 cells in library 'slow_vdd1v0' 
+Reading fast timing library '/home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir2/45nm_Library/lib/fast_vdd1v0_basicCells.lib)
+Read 480 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=33.9M, fe_cpu=0.39min, fe_real=0.92min, fe_mem=1056.5M) ***
+% Begin Load netlist data ... (date=09/02 18:31:32, mem=1028.3M)
+*** Begin netlist parsing (mem=1056.5M) ***
+Created 480 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1062.535M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1062.5M) ***
+% End Load netlist data ... (date=09/02 18:31:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1041.6M, current mem=1041.6M)
+Top level cell is dut.
+Hooked 960 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell dut ...
+*** Netlist is unique.
+** info: there are 1080 modules.
+** info: there are 448 stdCell insts.
+** info: there are 86 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 1110.949M, initial mem = 483.863M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/iofile/led.io" ...
+**WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+**WARN: (IMPFP-88):	Cannot find cell 'PADFILL'.
+**WARN: (IMPFP-3961):	The techSite 'Corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'Pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Set Shrink Factor to 0.90000
+Loading preference file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADDO; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADDI; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+Reading floorplan file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.fp.gz (mem = 1364.1M).
+% Begin Load floorplan data ... (date=09/02 18:31:33, mem=1334.6M)
+*info: reset 609 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.fp.spr.gz (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:01.0, peak res=1334.6M, current mem=1334.6M)
+There are 104 io inst loaded
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=09/02 18:31:34, total cpu=0:00:00.1, real=0:00:01.0, peak res=1338.0M, current mem=1338.0M)
+Reading congestion map file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=09/02 18:31:34, mem=1338.3M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=09/02 18:31:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=1373.0M, current mem=1373.0M)
+Loading place ...
+% Begin Load placement data ... (date=09/02 18:31:34, mem=1372.9M)
+Reading placement file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1399.2M) ***
+Total net length = 1.385e+05 (7.273e+04 6.574e+04) (ext = 6.740e+04)
+% End Load placement data ... (date=09/02 18:31:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1376.0M, current mem=1373.9M)
+% Begin Load routing data ... (date=09/02 18:31:34, mem=1373.9M)
+Reading routing file - /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Wed Sep  2 16:15:58 2026 Format: 20.1) ...
+*** Total 606 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1396.2M) ***
+% End Load routing data ... (date=09/02 18:31:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1375.1M, current mem=1375.1M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1399.2M) ***
+Reading dirtyarea snapshot file /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/dut.db.da.gz (Create by Innovus v21.15-s110_1 on Wed Sep  2 16:15:59 2026, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+Cap table was created using Encounter 10.10-b056_1.
+Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+Set Shrink Factor to 0.90000
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/rc/gpdk045.tch'
+ 
+ Analysis View: best
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/kite/Desktop/jakir2/LED_matrix/phy/dut1.enc.dat/libs/mmmc/rc/gpdk045.tch'
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=09/02 18:31:35, mem=1391.0M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=09/02 18:31:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1398.1M, current mem=1398.1M)
+min max
+% Begin load AAE data ... (date=09/02 18:31:35, mem=1412.1M)
+AAE DB initialization (MEM=1459.22 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=09/02 18:31:36, total cpu=0:00:00.6, real=0:00:01.0, peak res=1418.6M, current mem=1418.6M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 5 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/sdc was created. It contains 5 sinks and 1 sources.
+**WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+Restoring CCOpt config done.
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=09/02 18:31:36, total cpu=0:00:04.2, real=0:00:06.0, peak res=1442.4M, current mem=1424.2M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           26  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           10  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-88             2  Cannot find cell '%s'.                   
+WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPSYC-2             2  Timing information is not defined for ce...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCCOPT-2332        1  The property %s is deprecated. It still ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 53 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> setDrawView place
+<CMD> fit
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'dut' of instances=2348 and nets=609 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design dut.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: rc
+Metal density calculation for erosion effect completed (CPU=0:00:00.0  MEM=1500M)
+extractDetailRC Option : -outfile /tmp/innovus_temp_102572_cad07_kite_imqpIL/dut_102572_Bn54eL.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1509.0M)
+Extracted 10.05% (CPU Time= 0:00:00.2  MEM= 1657.2M)
+Extracted 20.0411% (CPU Time= 0:00:00.2  MEM= 1657.2M)
+Extracted 30.0323% (CPU Time= 0:00:00.3  MEM= 1659.2M)
+Extracted 40.0529% (CPU Time= 0:00:00.3  MEM= 1660.2M)
+Extracted 50.0441% (CPU Time= 0:00:00.3  MEM= 1660.2M)
+Extracted 60.0353% (CPU Time= 0:00:00.3  MEM= 1661.2M)
+Extracted 70.0558% (CPU Time= 0:00:00.3  MEM= 1661.2M)
+Extracted 80.047% (CPU Time= 0:00:00.4  MEM= 1661.2M)
+Extracted 90.0382% (CPU Time= 0:00:00.4  MEM= 1662.2M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 1664.2M)
+Number of Extracted Resistors     : 6867
+Number of Extracted Ground Cap.   : 6706
+Number of Extracted Coupling Cap. : 5356
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1641.2M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.8  Real Time: 0:00:01.0  MEM: 1641.184M)
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1641.18)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -bumpy_waveform -threshold 0' after timing analysis. Delay report is enabled by setting 'set_si_mode -enable_delay_report true' before timing analysis.
+Type 'man IMPESI-3140' for more detail.
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1757.32 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1757.32 CPU=0:00:00.4 REAL=0:00:01.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1757.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1757.3M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1742.44)
+Glitch Analysis: View worst -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst -- Total Number of Nets Analyzed = 658. 
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  9.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1788.14 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1788.14 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1768.41)
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1784.54 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1784.54 CPU=0:00:00.2 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1792.5M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1792.5M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1754.66)
+Glitch Analysis: View best -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best -- Total Number of Nets Analyzed = 658. 
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  8.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1801.36 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1801.36 CPU=0:00:00.0 REAL=0:00:00.0)
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+rc
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'dut' of instances=2348 and nets=609 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design dut.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: rc
+Metal density calculation for erosion effect completed (CPU=0:00:00.0  MEM=1809.36M)
+extractDetailRC Option : -outfile /tmp/innovus_temp_102572_cad07_kite_imqpIL/dut_102572_qhSC2l.rcdb.d -maxResLength 222.222  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1775.4M)
+Extracted 10.05% (CPU Time= 0:00:00.2  MEM= 1920.5M)
+Extracted 20.0411% (CPU Time= 0:00:00.2  MEM= 1920.5M)
+Extracted 30.0323% (CPU Time= 0:00:00.3  MEM= 1920.5M)
+Extracted 40.0529% (CPU Time= 0:00:00.3  MEM= 1921.5M)
+Extracted 50.0441% (CPU Time= 0:00:00.3  MEM= 1921.5M)
+Extracted 60.0353% (CPU Time= 0:00:00.3  MEM= 1922.5M)
+Extracted 70.0558% (CPU Time= 0:00:00.3  MEM= 1922.5M)
+Extracted 80.047% (CPU Time= 0:00:00.3  MEM= 1922.5M)
+Extracted 90.0382% (CPU Time= 0:00:00.4  MEM= 1922.5M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 1925.5M)
+Number of Extracted Resistors     : 6867
+Number of Extracted Ground Cap.   : 6706
+Number of Extracted Coupling Cap. : 5356
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1907.5M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:01.0  MEM: 1907.543M)
+<CMD> rcOut -spef dut1.spef -rc_corner rc
+RC Out has the following PVT Info:
+   RC:rc, Operating temperature 125 C
+Dumping Spef file.....
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 1881.8M)
+<CMD> all_hold_analysis_views 
+<CMD> all_setup_analysis_views 
+<CMD> write_sdf  -ideal_clock_network dut1.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: dut
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1879.82)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  100.0 percent of the nets selected for SI analysis
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1859.61 CPU=0:00:00.3 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1859.61 CPU=0:00:00.5 REAL=0:00:01.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1867.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1867.6M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1783.82)
+Glitch Analysis: View worst -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  9.5 percent of the nets selected for SI analysis
+Glitch Analysis: View best -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best -- Total Number of Nets Analyzed = 658. 
+Total number of fetched objects 658
+AAE_INFO-618: Total number of nets in the design is 609,  8.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1834.12 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1834.12 CPU=0:00:00.1 REAL=0:00:00.0)
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Sep  2 18:32:58 2026
+  Total CPU time:     0:00:45
+  Total real time:    0:02:30
+  Peak memory (main): 1678.99MB
+
+
+*** Memory Usage v#1 (Current mem = 1816.113M, initial mem = 483.863M) ***
+*** Message Summary: 57 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:40.9, real=0:02:21, mem=1816.1M) ---

@@ -1,0 +1,39 @@
+ecoAddRepeater -cell BUFX2 -net n_19 -name FE_ECOC0_n_19
+ecoAddRepeater -cell BUFX2 -net n_0 -name FE_ECOC1_n_0
+ecoAddRepeater -cell BUFX2 -net n_0 -name FE_ECOC2_n_0
+ecoAddRepeater -cell BUFX2 -net n_0 -name FE_ECOC3_n_0
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC4_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC5_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC6_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC7_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC8_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC9_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC10_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC11_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC12_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC13_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC14_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC15_n_9
+ecoAddRepeater -cell BUFX2 -net n_9 -name FE_ECOC16_n_9
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC17_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC18_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC19_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC20_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC21_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC22_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC23_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC24_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC25_n_25
+ecoAddRepeater -cell BUFX2 -net n_25 -name FE_ECOC26_n_25
+ecoAddRepeater -cell BUFX2 -net FE_ECON0_n_19 -name FE_ECOC27_n_19
+ecoAddRepeater -cell BUFX2 -net FE_ECON0_n_19 -name FE_ECOC28_n_19
+ecoAddRepeater -cell BUFX2 -net FE_ECON0_n_19 -name FE_ECOC29_n_19
+ecoAddRepeater -cell BUFX2 -net FE_ECON1_n_0 -name FE_ECOC30_n_0
+ecoAddRepeater -cell BUFX2 -net FE_ECON1_n_0 -name FE_ECOC31_n_0
+ecoAddRepeater -cell BUFX2 -net FE_ECON1_n_0 -name FE_ECOC32_n_0
+ecoAddRepeater -cell BUFX2 -net FE_ECON27_n_19 -name FE_ECOC33_n_19
+ecoAddRepeater -cell BUFX2 -net FE_ECON27_n_19 -name FE_ECOC34_n_19
+ecoAddRepeater -cell BUFX2 -net FE_ECON27_n_19 -name FE_ECOC35_n_19
+ecoDeleteRepeater -inst FE_ECOC33_n_19 
+ecoDeleteRepeater -inst FE_ECOC17_n_25 
+ecoDeleteRepeater -inst FE_ECOC34_n_19 
